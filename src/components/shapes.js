@@ -7,8 +7,8 @@ export const LineBar = styled.div`
 `;
 
 export const Square = styled.div`
-    width: 15%; 
-    height: 25%; 
+    width: 25rem; 
+    height: 14rem; 
     background-color: #FF0202;
 `;
 
@@ -19,7 +19,7 @@ export const HorLineBar = styled.div`
 `;
 
 export const Circle = styled.div`
-    width: 130px;
+    width: 7rem;
     aspect-ratio: 1/1;
     border-radius: 120px;
     background-color: black;

@@ -1,4 +1,6 @@
 /* TODO: ADD FORMATING FOR SMALLER SCREENS */
+/* TODO: CHANGE ALL UNIT FROM PX TO REM */
+/* TODO: SET NORMAL TEXT FONT SIZE IN ROOT */
 
 /* VARIABLES */
 #root {
@@ -7,6 +9,7 @@
   --bgcolor: #F5F5F5;
   --color-black: #111211;
   --color-gray: #D9D9D9;
+  --nav-font: 'Galindo';
   --title-font: 'Kanit';
   --name-font: 'Happy Monkey';
   --normal-text-font: 'Cabin';
@@ -16,12 +19,16 @@
   color: black;
 }
 
+/* ----------------------------------------------------------------------------------------------------- */
+
+
 /* NAVIGATION BAR */
 
 .nav_bar {
   overflow: hidden;
   width: 95%;
   height: 50px;
+  margin-left: 1rem;
   margin-right: 5%;
   border-radius: 0px 0px 0px 60px;
   background-color: var(--color-black);
@@ -30,33 +37,34 @@
   justify-content: space-between;
 }
 
-/* Style the links inside the navigation bar */
 .nav_link {
   float: left;
   color: var(--color-white);
+  font-family: var(--normal-text-font);
+  font-size: 1.3rem;
+  font-weight: 700;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
   width: 18%;
 }
 
-/* Change the color of links on hover */
 .nav_link:hover {
   background-color: var(--color-red);
   color: var(--color-white);
 }
 
-/* Add a color to the active/current link */
 .nav_link:active{
-  border-radius: 15px;
+  border-radius: 1rem 2rem;
   border: 2px solid var(--color-black);
   background-color: var(--color-red);
 }
 
+
 #page-body{
   height: 87vh;
 }
+
 /* HOME PAGE */
 .home-page{
   margin: var(--top-margin) var(--left-margin) 0 5%;
@@ -114,38 +122,53 @@
 
 .home-photo-container{
   display: flex;
-  width: 95%;
+  width: 100%;
   height: 70%;
-  transform: translate(8vh, -1vh);
-}
-
-
-.square-home:nth-child(1){
-  align-self: flex-end;
-  transform: translate(8vh,-1vh);
-  z-index: 0;
-}
-
-#photo_1{
-  align-self: center;
-  width: 70%;
-  height: 75%;
-  background-color: var(--color-gray);
+  position: relative;
   z-index: 1;
 }
 
-.square-home:nth-child(3){
-  align-self: flex-start;
-  transform: translate(-8vh,1vh);
-  z-index: 0;
+.photo-home{
+  background-color: var(--color-gray);
 }
 
+#photo_1{
+  --width-photo1: 46rem;
+  --height-photo1: 26rem;
+  width: var(--width-photo1);
+  height: var(--height-photo1);
+  align-self: center;
+  position: relative;
+}
+
+#photo_1::before, #photo_1::after {
+  content: '';
+  position: absolute;
+  width: calc((var(--width-photo1) / 2) + 2rem);
+  height: calc((var(--height-photo1) / 2) + 1rem);
+  background-color: var(--color-red);
+  z-index: -1;
+}
+
+#photo_1::before {
+top: calc((var(--height-photo1) / 2) - 1rem);
+left: 0;
+transform: translate(-1.5rem, 1.5rem);
+}
+#photo_1::after {
+left: calc((var(--width-photo1) / 2) - 2rem);
+top: 0;
+transform: translate(1.5rem, -1.5rem);
+} 
+
+
+/* ----------------------------------------------------------------------------------------------------- */
 
 /* ABOUT ME PAGE */
-.aboutMe-page{
+.framed-page{
   margin: var(--top-margin) var(--left-margin) 0 10px;
 } 
-.center-container{
+.aboutMe-center-container{
   gap: 20vh;
 }
 
@@ -173,36 +196,252 @@
 }
 .aboutMe-author{
   font-weight: 700;
-  font-size: 58px;
-  transform: scale(1.2, 1);
+  font-size: 65px;
+  /* transform: scale(1.2, 1); */
   transform-origin: left;
-
+  letter-spacing: 6px;
 }
 
 .normal_text{
   font-size: 18px;
+  text-align: justify;
+  letter-spacing: 0.7px;
 }
 
-.skills_icons{
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  padding-top: 60px;
-
-}
-
-.skill-container{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-}
-.skill-tag{
-  font-size: 20px;
-}
-.photo_2{
+#photo_2{
   align-self: center;
   width: 100%;
   height: 80%;
-  background-color: var(--color-gray);
+}
+
+.aboutMe-contact-tags{
+  display: flex;
+  width: 100%;
+  gap: 6rem;
+}
+.aboutMe-tag-container{
+  display: flex;
+  gap: 2rem;
+}
+
+.aboutMe-contact-tags{
+  /* font-size: 2rem; */
+  align-self: center;
+  color: var(--color-black);
+}
+
+.aboutMe-contact-tags:hover{color: var(--color-red)}
+.aboutMe-contact-tags:active{ transform: translateY(.2rem);}
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* EXPERIENCE PAGE */
+
+.experience-column{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  font-family: var(--normal-text-font);
+}
+
+#photo-container{
+  align-items: center;
+  justify-content: center; 
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#photo_3{
+  width: 70%;
+  height: 50%;
+  align-self: center;
+}
+
+.experience-title{
+  font-weight: 700;
+  font-size: 50px;
+  padding-bottom: 15px;
+}
+
+#python, #html{
+  text-align: right;
+}
+
+.experience-description{
+  font-size: 18px;
+  text-align: justify;
+  letter-spacing: 0.7px;
+}
+
+.submit-button{
+  font-family: var(--title-font);
+  font-size: 1.5rem;
+  /* width: 15rem; */
+  letter-spacing: .02rem;
+  align-self: center; 
+  background-color: transparent;
+  cursor: pointer;
+  border: .2rem solid currentColor;
+  border-radius: .8rem;
+  padding: .8rem 1.5rem;
+  position: relative;
+  transition: color .3s;
+  z-index: 1;
+}
+.submit-button::before, .submit-button::after {
+    content: '';
+    position: absolute;
+    background-color: var(--bgcolor);
+    z-index: -1;
+    transition: all .3s;
+  }
+.submit-button::before {
+  width: calc(100% - 3rem);
+  height: calc(101% + 1rem);
+  top: -.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.submit-button::after {
+  height: calc(100% - 2rem);
+  width: calc(101% + 1rem);
+  left: -.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.submit-button:hover {color: var(--color-red);}
+.submit-button:hover::before { width: 0; }
+.submit-button:hover::after { height: 0; }
+.submit-button:active { transform: translateY(.2rem); }
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* WORK PAGE */
+
+.work-skills_icons{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100%;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.skill-container{
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  align-items: center;
+}
+.skill-tag{
+  font-family: var(--normal-text-font);
+  font-size: 1.3rem;
+  width: 10rem;
+  text-align: center;
+}
+
+.work-barplot-container{
+  width: 100%;
+  height: 100%;
+  background-color: #EE0909;
+}
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* GET IN TOUCH PAGE */
+
+.getInTouch-center-container{
+  gap: 6rem;
+}
+.getInTouch-column{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--normal-text-font);
+}
+
+.getInTouch-photo-container{
+  width: 100%;
+  height: 50%;
+  padding-bottom: 3rem;
+}
+#photo_4{
+  width: 100%;
+  height: 100%;
+  align-self: center;
+}
+
+.getInTouch-contact-info{
+  font-family: var(--normal-text-font);
+  padding-bottom: 1.5rem;
+}
+.getInTouch-tag{
+  font-size: 1.2rem;
+  padding-bottom: 1.5rem;
+}
+.getIntouch-tag-type{
+  font-size: 1.5rem;
+}
+
+.getInTouch-call-icons{
+ display: flex;
+ gap: .6rem;
+ align-items: center;
+}
+
+.getInTouch-info{
+  font-size: 1.2rem;
+}
+
+#column-right{
+  justify-content: flex-end;
+  width: 40rem;
+}
+
+.getInTouch-title-container{
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.getInTouch-title{
+  flex:50%;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.getInTouch-form{
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+
+.getInTouch-error{
+  color: var(--color-red);
+  font-size: 1.2rem;
+}
+
+.getInTouch-input-field, .getInTouch-message-field{
+  border-radius: .5rem;
+}
+.getInTouch-input-field{
+  font-size: 1.1rem;
+  width: 20rem;
+  padding: .2rem .5rem;
+}
+.getInTouch-message-label{
+  font-size: 1.5rem;
+  padding-bottom: .8rem;
+}
+.getInTouch-message-field{
+  font-size: 1rem;
+  width: 100%;
+  height: 20rem;
+  padding: .5rem;
+}
+.getInTouch-message-container{
+  padding-bottom: 2rem;
 }

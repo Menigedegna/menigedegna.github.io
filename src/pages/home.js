@@ -1,5 +1,5 @@
 import { SplitScreen, HorizSplitScreen } from "../components/SpliScreen";
-import { Square, LineBar, HorLineBar } from "../components/shapes";
+import { LineBar, HorLineBar } from "../components/shapes";
 const NameTag = () => {
     return(
         <div className='name-tag'>
@@ -13,8 +13,8 @@ const NameTag = () => {
 const TitleTag = () => {
     return (
         <div className="title-tag">
-            <div className="career-path">Development</div>
-            <div className="doc-title">Porfolio</div>
+            <div className="career-path">Full Stack Developer</div>
+            <div className="doc-title">Portfolio</div>
         </div>
     )
 }
@@ -32,9 +32,7 @@ const RightHandComponent = () => {
     return (
         <div className="home-right-screen">
             <div className="home-photo-container">
-                <Square className="square-home" id="home-square-left"></Square>
-                <Square className="square-home" id="photo_1"></Square>
-                <Square className="square-home" id="home-square-right"></Square>
+                <div className="photo-home" id="photo_1"></div>
             </div>
             <HorLineBar id='horizontal-line-home' />
 

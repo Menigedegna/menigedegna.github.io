@@ -1,45 +1,41 @@
-// import { styled } from "styled-components";
 import { SplitScreen, BorderFrame } from "../components/SpliScreen";
 import { AboutMePageContent } from "../components/contents";
-import { HorLineBar, Circle } from "../components/shapes";
+import { HorLineBar } from "../components/shapes";
 
-const SkillTag = ({name}) => {
-    return(
-        <div className='skill-container'>
-            <Circle/>
-            <div className="skill-tag">{name}</div>
-        </div>
-    );
+const OpenPDF = () => {
+    return;
 }
-
 const LeftHandComponent = () => {
     return (
         <div className="aboutMe-left-screen">
             <div className='aboutMe-title'>
                 <div className="aboutMe-title-container">
-                    <div className="aboutMe-title">About Me</div>
+                    <div className="aboutMe-title">Hi, I am</div>
                     <HorLineBar />
                 </div>
-                <div className="aboutMe-author">Mariamawit Ashenafi</div>
+                <div className="aboutMe-author"><span style={{color:'var(--color-red)'}}>Mariamawit</span> Ashenafi</div>
             </div>
             <div className="normal_text" id="aboutme-text">{AboutMePageContent}</div>
-            <div className="skills_icons">
-                <SkillTag name={"Python"}/>
-                <SkillTag name={"JavaScript"}/>
-                <SkillTag name={"HTML5/CSS"}/>
+            <div className="aboutMe-contact-tags">
+                <button className="submit-button" onClick={OpenPDF}>Resume</button>
+                <div className='aboutMe-tag-container'>
+                    <a className="aboutMe-contact-tags" href="https://www.google.com/" target="_blank" rel="noreferrer"><i className="fa fa-linkedin-square fa-3x" aria-hidden="true"></i> </a>
+                    <a className="aboutMe-contact-tags" href="https://www.google.com/" target="_blank" rel="noreferrer"><i className="fa fa-github fa-3x" aria-hidden="true"></i> </a>
+                </div>
+
             </div>
         </div>
     )
 }
 const RightHandComponent = () => {
 return (
-        <div className="photo_2"></div>
+        <div className="photo-home" id="photo_2"></div>
     )
 }
 
 const MainContent = () => {
     return(
-        <SplitScreen leftWeight={5} rightWeight={5} className={'center-container'}>
+        <SplitScreen leftWeight={5} rightWeight={5} className={'aboutMe-center-container'}>
             <LeftHandComponent />
             <RightHandComponent />
         </SplitScreen>
@@ -47,7 +43,7 @@ const MainContent = () => {
 }
 const AboutMePage = () => {
     return (
-        <BorderFrame displacement={'100%'} className={'aboutMe-page'}>
+        <BorderFrame displacement={'100%'} className={'framed-page'}>
             <MainContent />
         </BorderFrame>
 

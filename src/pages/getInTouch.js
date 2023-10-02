@@ -1,6 +1,68 @@
+import { SplitScreen, BorderFrame } from "../components/SpliScreen";
+import { ContactEmail, ContactTel } from "../components/contents";
+import { HorLineBar } from "../components/shapes";
+import { ContactForm } from "../components/contactForm";
+
+const ContactInfo = ({children, info}) => {
+    return(
+        <div className="getInTouch-contact-info">
+            <div className="getInTouch-tag">{children}</div>
+            <div className="getInTouch-info">{info}</div>
+        </div>
+    );
+}
+
+
+const ColumnOne = () => {
+    return(
+        <div className="getInTouch-column">
+            <div className="getInTouch-photo-container">
+                <div className="photo-home" id="photo_4"></div>
+            </div>
+            <ContactInfo info={ContactTel}>
+                <div className="getInTouch-call-icons">
+                    <i className="fa fa-phone" aria-hidden="true"></i>
+                    <i className="fa fa-whatsapp" aria-hidden="true"></i>
+                    <i className="fa fa-telegram" aria-hidden="true"></i>
+                    <div className="getIntouch-tag-type">Call</div>
+                </div>
+            </ContactInfo>
+            <ContactInfo info={ContactEmail}>
+                <div className="getInTouch-call-icons">
+                    <i className="fa fa-envelope" aria-hidden="true"></i>
+                    <div className="getIntouch-tag-type">Email</div>
+                </div>
+            </ContactInfo>
+        </div>
+    );
+}
+
+const ColumnTwo = () => {
+    return(
+        <div className="getInTouch-column" id="column-right">
+            <div className="getInTouch-title-container">
+                <div className="getInTouch-title">What's on your mind?</div>
+                <HorLineBar />
+            </div>
+            <ContactForm />
+        </div>
+    );
+}
+
+const MainContent = () => {
+    return(
+        <SplitScreen leftWeight={1} rightWeight={1} className={'getInTouch-center-container'}>
+            <ColumnOne />
+            <ColumnTwo />
+        </SplitScreen>
+    );
+}
+
 const ContactPage = () => {
     return (
-        <h1>This is the Contact page!</h1>
+        <BorderFrame displacement={'770%'} className={'framed-page'}>
+            <MainContent />
+        </BorderFrame>
     );
 }
 
