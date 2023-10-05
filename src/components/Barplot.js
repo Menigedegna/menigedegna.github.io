@@ -28,7 +28,7 @@ export const Barplot = ({ width, height, data }) => {
   // Build the shapes
   const allShapes = data.map((d) => {
     return (
-      <BarItem
+      <BarItem className="work-barItem"
         key={d.name}
         name={d.name}
         value={d.value}

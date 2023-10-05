@@ -62,21 +62,24 @@ export const HorizSplitScreen = ({
 
 const Well = styled.div`
     background-color: var(--bgcolor);
-    width: 100%;
+    border-radius: .5rem;
+    width: 77%;
     aspect-ratio: 1/1;
-    transform: translateY(${props => props.displacement});
+    rotate: -45deg;
+    translate: .55rem ${props => props.displacement};
+    transition: all .3s;
 `;
 
 export const BorderFrame = ({
     children,
     displacement = 0,
-    className="border-frame"
+    className="framed-page"
 }) => {
     console.log("child");
     console.log(children);
     return (
         <Container className={className}>
-            <Pane weight={0.5} style={{backgroundColor: 'var(--color-red)', marginRight: '50px'}}>
+            <Pane weight={0.5} className="left-border-decor">
                 <Well displacement={displacement}/>
             </Pane>
             <Pane weight={10}>

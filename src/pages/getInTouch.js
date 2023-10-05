@@ -21,15 +21,15 @@ const ColumnOne = () => {
             </div>
             <ContactInfo info={ContactTel}>
                 <div className="getInTouch-call-icons">
-                    <i className="fa fa-phone" aria-hidden="true"></i>
-                    <i className="fa fa-whatsapp" aria-hidden="true"></i>
-                    <i className="fa fa-telegram" aria-hidden="true"></i>
+                    <i className="fa fa-phone decor-icons" aria-hidden="true"></i>
+                    <i className="fa fa-whatsapp decor-icons" aria-hidden="true"></i>
+                    <i className="fa fa-telegram decor-icons" aria-hidden="true"></i>
                     <div className="getIntouch-tag-type">Call</div>
                 </div>
             </ContactInfo>
             <ContactInfo info={ContactEmail}>
                 <div className="getInTouch-call-icons">
-                    <i className="fa fa-envelope" aria-hidden="true"></i>
+                    <i className="fa fa-envelope decor-icons" aria-hidden="true"></i>
                     <div className="getIntouch-tag-type">Email</div>
                 </div>
             </ContactInfo>
@@ -60,7 +60,7 @@ const MainContent = () => {
 
 const ContactPage = () => {
     return (
-        <BorderFrame displacement={'770%'} className={'framed-page'}>
+        <BorderFrame displacement={'1050%'}>
             <MainContent />
         </BorderFrame>
     );

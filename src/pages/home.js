@@ -45,7 +45,7 @@ const RightHandComponent = () => {
 
 const HomePage = () => {
     return (
-        <SplitScreen leftWeight={5} rightWeight={6} className='home-page'>
+        <SplitScreen leftWeight={5} rightWeight={6} className='framed-page'>
             <LeftHandComponent />
             <RightHandComponent />
         </SplitScreen>

@@ -30,8 +30,8 @@ export const BarItem = ( {name, value, barHeight, barWidth, x, y}) => {
         width={springProps.barWidth}
         height={barHeight}
         opacity={0.7}
-        stroke="#9d174d"
-        fill="#9d174d"
+        stroke='var(--color-red)'
+        fill='var(--color-red)'
         fillOpacity={0.3}
         strokeWidth={1}
         rx={1}
@@ -41,17 +41,19 @@ export const BarItem = ( {name, value, barHeight, barWidth, x, y}) => {
         y={springProps.y?.to((y) => y + barHeight / 2)}
         textAnchor="end"
         alignmentBaseline="central"
-        fontSize={12}
+        fontFamily='var(--normal-text-font)'
+        fontSize='1rem'
         opacity={springProps.valueOpacity}
       >
-        {springProps.value?.to((value) => value.toFixed(0))}
+        {springProps.value?.to((value) => `${value.toFixed(0)} %`)}
       </animated.text>
       <animated.text
         x={x + 7}
         y={springProps.y?.to((y) => y + barHeight / 2)}
         textAnchor="start"
         alignmentBaseline="central"
-        fontSize={12}
+        fontFamily='var(--normal-text-font)'
+        fontSize='1rem'
       >
         {name}
       </animated.text>

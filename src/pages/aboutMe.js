@@ -15,12 +15,12 @@ const LeftHandComponent = () => {
                 </div>
                 <div className="aboutMe-author"><span style={{color:'var(--color-red)'}}>Mariamawit</span> Ashenafi</div>
             </div>
-            <div className="normal_text" id="aboutme-text">{AboutMePageContent}</div>
-            <div className="aboutMe-contact-tags">
+            <div className="normal_text" id="aboutMe-text"  dangerouslySetInnerHTML= {{ __html : AboutMePageContent }}/>
+            <div className="aboutMe-contact-container">
                 <button className="submit-button" onClick={OpenPDF}>Resume</button>
                 <div className='aboutMe-tag-container'>
-                    <a className="aboutMe-contact-tags" href="https://www.google.com/" target="_blank" rel="noreferrer"><i className="fa fa-linkedin-square fa-3x" aria-hidden="true"></i> </a>
-                    <a className="aboutMe-contact-tags" href="https://www.google.com/" target="_blank" rel="noreferrer"><i className="fa fa-github fa-3x" aria-hidden="true"></i> </a>
+                    <a className="aboutMe-contact-tags submit-button" href="https://www.google.com/" target="_blank" rel="noreferrer"><i className="fa fa-linkedin-square fa-3x" aria-hidden="true"></i> </a>
+                    <a className="aboutMe-contact-tags submit-button" href="https://www.google.com/" target="_blank" rel="noreferrer"><i className="fa fa-github fa-3x" aria-hidden="true"></i> </a>
                 </div>
 
             </div>
@@ -43,7 +43,7 @@ const MainContent = () => {
 }
 const AboutMePage = () => {
     return (
-        <BorderFrame displacement={'100%'} className={'framed-page'}>
+        <BorderFrame displacement={'120%'}>
             <MainContent />
         </BorderFrame>
 
