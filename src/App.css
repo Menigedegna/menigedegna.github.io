@@ -287,52 +287,10 @@ transform: translate(1.5rem, -1.5rem);
   color: black;
 }
 
-/* ----------------------------------------------------------------------------------------------------- */
-
-/* EXPERIENCE PAGE */
-
-.experience-column{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; 
-  font-family: var(--normal-text-font);
-}
-
-#photo-container{
-  align-items: center;
-  justify-content: center; 
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-#photo_3{
-  width: 70%;
-  height: 50%;
-  align-self: center;
-}
-
-.experience-title{
-  font-weight: 700;
-  font-size: 50px;
-  padding-bottom: 15px;
-}
-
-#python, #html{
-  text-align: right;
-}
-
-.experience-description{
-  font-size: 18px;
-  text-align: justify;
-  letter-spacing: 0.7px;
-}
-
 
 /* ----------------------------------------------------------------------------------------------------- */
 
-/* WORK PAGE */
+/* SKILLS PAGE */
 .work-left-container{
   display: flex;
   flex-direction: column;
@@ -433,6 +391,58 @@ transform: translate(1.5rem, -1.5rem);
   font-family: var(--normal-text-font);
   font-size: 2rem;
 }
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* EXPERIENCE PAGE */
+.column-split{
+  gap: 1rem;
+}
+
+.experience-column{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  transition: all .3s;
+}
+
+.experience-image-text{
+  position: absolute;
+  align-self: center;
+  z-index:1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.experience-code-tag{
+  color: var(--color-gray);
+  font-family: var(--nav-font);
+  font-weight: 200;
+  font-size: 1.2rem;
+  background-color: rgb(56, 53, 53);
+  padding: .4rem .7rem;
+  border-radius: .5rem;
+}
+.experience-app-type{
+  color: var(--color-red)
+}
+.experience-column:hover .experience-image{
+  transition: all .3s;
+  opacity: .2
+}
+.experience-column:hover .experience-image-text{
+  transition: all .3s;
+  opacity: 1;
+}
+
+
 /* ----------------------------------------------------------------------------------------------------- */
 
 /* GET IN TOUCH PAGE */

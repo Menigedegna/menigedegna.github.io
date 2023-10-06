@@ -1,4 +1,5 @@
-// TODO: CHANGE COLOR OF BARPLOT
+// TODO: ASK AHMED FOR RECOMMENDATION
+// TODO: ASK AHMED TO COMPLETE WEB CONTENT
 
 import { SplitScreen, BorderFrame } from "../components/SpliScreen";
 import { useState } from "react";

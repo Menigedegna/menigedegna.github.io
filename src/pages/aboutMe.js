@@ -1,3 +1,7 @@
+// TODO : ADD A OPENPDF FUNCTION TO OPEN RESUME IN A NEW TAB
+// TODO : ALLOW VIEWER TO DOWNLOAD RESUME
+// TODO : CREATE AND ADD ABOUT ME VIDEO
+
 import { SplitScreen, BorderFrame } from "../components/SpliScreen";
 import { AboutMePageContent } from "../components/contents";
 import { HorLineBar } from "../components/shapes";

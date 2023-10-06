@@ -1,46 +1,65 @@
-// TODO : ADD A OPENPDF FUNCTION TO OPEN RESUME IN A NEW TAB
-// TODO: ALLOW VIEWER TO DOWNLOAD RESUME
+// TODO: CREATE POP OVER FOR EACH IMAGE TO GIVE DESCRIPTION OF PROJECT AND MY ROLE IN IT + LINK
+// SRC: https://medium.com/@sbeugen/writing-your-own-custom-react-hooks-in-3-simple-steps-ad4049c4114
+// TODO: CREATE WEB APP FOR PASSWORD MANAGER
 
 import { SplitScreen, BorderFrame } from "../components/SpliScreen";
-import { ExperiencePython, ExperienceJavascript, ExperienceHTML } from "../components/contents";
+// import { ExperiencePython, ExperienceJavascript, ExperienceHTML } from "../components/contents";
+import Image1 from "../images/silver_lining.png";
+import Image2 from "../images/XTSpotIntensity_snapshot.png";
+// import Image3 from "../images/XT.png";
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
-const ExpContent = ({skill, content, id}) => {
+const IMAGE_WIDTH = 525;
+const IMAGE_HEIGHT = 700;
+
+const GalleryLoader = ({image, id, imageAlt, appType, progList}) =>{
     return(
-        <div className="experience-content">
-            <div className="experience-title" id={id}>{skill}</div>
-            <div className="experience-description">{content}</div>
-
-        </div>
+        <div className="experience-column" id={id}>
+            <LazyLoadImage src={image} className="experience-image"
+                width={IMAGE_WIDTH} height={IMAGE_HEIGHT}
+                alt={imageAlt}
+            />
+            <div className="experience-image-text">
+                <div className="experience-code-tag experience-app-type">{appType}</div>
+                {progList.map((item, key) => <div key={item.id} className="experience-code-tag">{item}</div>)}
+            </div>
+        </div>   
     );
+
 }
 
 const ColumnsOneTwo = () =>{
     return(
-        <SplitScreen leftWeight={1} rightWeight={1} className={'experience-columns-one-two'}>
-            <div className="experience-column" id="column1">
-                <ExpContent skill="Python" content={ExperiencePython} id="python" />
-                <ExpContent skill="HTML5/CSS" content={ExperienceHTML} id="html" />
-            </div>
-            <div className="experience-column" id="photo-container">
-                <div className="photo-home" id="photo_3"></div>
-            </div>
+        <SplitScreen leftWeight={1} rightWeight={1} className={'column-split'}>
+            <GalleryLoader 
+                id="column1" 
+                image={Image1} 
+                imageAlt="Screenshot: Company website"
+                appType="WEBAPP"
+                progList={["HTML5", 'CSS', 'FLASK']}/>
+            <GalleryLoader 
+                id="column2" 
+                image={Image2} 
+                imageAlt="Screenshot: Image processing plugin"
+                appType="SOFTWARE"
+                progList={["PYTHON"]}/>
         </SplitScreen>
     ); 
 }
 
-const OpenPDF = () => {
-    return;
-}
+
 
 const MainContent = () => {
     return(
-        <SplitScreen leftWeight={2} rightWeight={1} className={'experience-center-container'}>
+        <SplitScreen leftWeight={2} rightWeight={1} className={'column-split'}>
             <ColumnsOneTwo />
-            <div className="experience-column" id="column3">
-                <ExpContent skill="JavaScript" content={ExperienceJavascript} id="js"/>
-                <button className="submit-button" onClick={OpenPDF}>Resume</button>
-            </div>
+            <GalleryLoader 
+                id="column2" 
+                image={Image2} 
+                imageAlt="Screenshot: Password Management app"
+                appType="WEBAPP"
+                progList={["HTML5", "CSS", "FLASK"]}/>
         </SplitScreen>
     );
 }
