@@ -36,6 +36,8 @@ export const Barplot = ({ width, height, data }) => {
         barWidth={xScale(d.value)}
         x={xScale(0)}
         y={yScale(d.name)}
+        maxX = {xScale(100)}
+        quarterX = {xScale(33)}
       />
     );
   });

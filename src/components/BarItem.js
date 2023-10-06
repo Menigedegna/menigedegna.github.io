@@ -1,7 +1,7 @@
 import { useSpring, animated } from "@react-spring/web";
 
 
-export const BarItem = ( {name, value, barHeight, barWidth, x, y}) => {
+export const BarItem = ( {name, value, barHeight, barWidth, x, y, maxX, quarterX}) => {
 
   const springProps = useSpring({
     // the 'from' properties will be used only to animate the initialization of the component
@@ -27,6 +27,18 @@ export const BarItem = ( {name, value, barHeight, barWidth, x, y}) => {
       <animated.rect
         x={x}
         y={springProps.y}
+        width={maxX}
+        height={barHeight}
+        opacity={0.8}
+        fill='var(--bgcolor)'
+        stroke='black'
+        strokeWidth={1}
+        rx={5}
+      />
+
+      <animated.rect
+        x={x}
+        y={springProps.y}
         width={springProps.barWidth}
         height={barHeight}
         opacity={0.7}
@@ -36,24 +48,29 @@ export const BarItem = ( {name, value, barHeight, barWidth, x, y}) => {
         strokeWidth={1}
         rx={1}
       />
-      <animated.text
-        x={springProps.barWidth?.to((width) => width - 7)}
-        y={springProps.y?.to((y) => y + barHeight / 2)}
-        textAnchor="end"
-        alignmentBaseline="central"
-        fontFamily='var(--normal-text-font)'
-        fontSize='1rem'
-        opacity={springProps.valueOpacity}
-      >
-        {springProps.value?.to((value) => `${value.toFixed(0)} %`)}
-      </animated.text>
-      <animated.text
-        x={x + 7}
+      <animated.rect
+        x={x}
+        y={springProps.y}
+        width={quarterX}
+        height={barHeight}
+        opacity={0.9}
+        fill='black'
+        stroke='black'
+        strokeWidth={1}
+        fillOpacity={0.9}
+        rx={5}
+      />
+      <animated.text 
+        x={x + 10}
         y={springProps.y?.to((y) => y + barHeight / 2)}
         textAnchor="start"
         alignmentBaseline="central"
         fontFamily='var(--normal-text-font)'
-        fontSize='1rem'
+        fontSize='1.1rem'
+        fill='var(--color-white)'
+        stroke='var(--color-white)'
+        strokeWidth={1}
+
       >
         {name}
       </animated.text>
