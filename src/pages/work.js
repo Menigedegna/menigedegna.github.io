@@ -5,17 +5,20 @@ import { SplitScreen, BorderFrame } from "../components/SpliScreen";
 import { useState } from "react";
 import { PersDev, ComSkill, LanguageSkill, recommendations } from "../components/contents";
 import { Barplot } from "../components/Barplot";
+import Image1 from "../images/profile_picture.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const BUTTONS_HEIGHT = 50;
-
+const IMAGE_WIDTH = 300;
+const IMAGE_HEIGHT = 420;
 
 const RightColumn = ({width, className, changeData, data, height}) =>{
     return(
         <div className={className}>
             <div className="work-skills_icons">
-                <button className="work-button" onClick={() => changeData(ComSkill, 500, recommendations[0])}>{"Computer Programing"}</button>
-                <button className="work-button" onClick={() => changeData(PersDev, 600, recommendations[1])}>{"Personal Development"}</button>
-                <button className="work-button" onClick={() => changeData(LanguageSkill, 300, recommendations[2])}>{"Language"}</button>
+                <button className="work-button" style={{opacity:data===ComSkill?1:0.7}} onClick={() => changeData(ComSkill, 500, recommendations[0])}>{"Computer Programing"}</button>
+                <button className="work-button" style={{opacity:data===PersDev?1:0.7}} onClick={() => changeData(PersDev, 600, recommendations[1])}>{"Personal Development"}</button>
+                <button className="work-button" style={{opacity:data===LanguageSkill?1:0.7}} onClick={() => changeData(LanguageSkill, 300, recommendations[2])}>{"Language"}</button>
             </div>
             <Barplot className="worlk-barplot"
                 width={width}
@@ -41,7 +44,12 @@ const MainContent = () => {
     return(
         <SplitScreen leftWeight={1} rightWeight={2} className={'work-center-container'}>
             <div className="work-left-container">
-                <div className="work-photo"></div>
+                <div className="work-photo">
+                    <LazyLoadImage src={Image1} className="experience-image"
+                        width={IMAGE_WIDTH} height={IMAGE_HEIGHT}
+                        alt="Screenshot of product"
+                    />
+                </div>
                 <div className="work-citation">
                     <div className="work-testimony-message">
                         <i class="fa fa-quote-left quote-icons" id="quote-left" aria-hidden="true"></i>
@@ -53,7 +61,7 @@ const MainContent = () => {
                     </div>
                 </div>
             </div>
-            <RightColumn width={800} className='work-right-container' changeData={changeData} data={selectedData} height={height}/>
+            <RightColumn width={800} className='work-right-container' changeData={changeData} data={selectedData} height={height} />
         </SplitScreen>
     );
 }

@@ -1,5 +1,13 @@
 import { SplitScreen, HorizSplitScreen } from "../components/SpliScreen";
 import { LineBar, HorLineBar } from "../components/shapes";
+import Image1 from "../images/dark-work-profile.png";
+
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
+const IMAGE_WIDTH = 720;
+const IMAGE_HEIGHT = 470;
+
+
 const NameTag = () => {
     return(
         <div className='name-tag'>
@@ -32,7 +40,10 @@ const RightHandComponent = () => {
     return (
         <div className="home-right-screen">
             <div className="home-photo-container">
-                <div className="photo-home" id="photo_1"></div>
+                    <LazyLoadImage src={Image1} className="experience-image"
+                        width={IMAGE_WIDTH} height={IMAGE_HEIGHT}
+                        alt="Screenshot of product"
+                    />
             </div>
             <HorLineBar id='horizontal-line-home' />
 

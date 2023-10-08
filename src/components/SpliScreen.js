@@ -61,7 +61,7 @@ export const HorizSplitScreen = ({
 };
 
 const Well = styled.div`
-    background-color: var(--bgcolor);
+    background-color: var(--color-yellow);
     border-radius: .5rem;
     width: 77%;
     aspect-ratio: 1/1;

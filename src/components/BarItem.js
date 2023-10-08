@@ -53,8 +53,8 @@ export const BarItem = ( {name, value, barHeight, barWidth, x, y, maxX, quarterX
         y={springProps.y}
         width={quarterX}
         height={barHeight}
-        opacity={0.9}
-        fill='black'
+        opacity={1}
+        fill='var(--color-dark-purple)'
         stroke='black'
         strokeWidth={1}
         fillOpacity={0.9}
@@ -67,9 +67,9 @@ export const BarItem = ( {name, value, barHeight, barWidth, x, y, maxX, quarterX
         alignmentBaseline="central"
         fontFamily='var(--normal-text-font)'
         fontSize='1.1rem'
-        fill='var(--color-white)'
-        stroke='var(--color-white)'
-        strokeWidth={1}
+        fill='var(--color-yellow)'
+        stroke='var(--color-yellow)'
+        strokeWidth={0.5}
 
       >
         {name}

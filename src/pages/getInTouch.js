@@ -1,7 +1,14 @@
+// TODO: when you buy a domain, change email
+
 import { SplitScreen, BorderFrame } from "../components/SpliScreen";
 import { ContactEmail, ContactTel } from "../components/contents";
 import { HorLineBar } from "../components/shapes";
 import { ContactForm } from "../components/contactForm";
+import Image1 from "../images/dark-bye-work-profile.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
+const IMAGE_WIDTH = 650;
+const IMAGE_HEIGHT = 400;
 
 const ContactInfo = ({children, info}) => {
     return(
@@ -17,7 +24,11 @@ const ColumnOne = () => {
     return(
         <div className="getInTouch-column">
             <div className="getInTouch-photo-container">
-                <div className="photo-home" id="photo_4"></div>
+                {/* <div className="photo-home" id="photo_4"></div> */}
+                <LazyLoadImage src={Image1} className="bye-image"
+                    width={IMAGE_WIDTH} height={IMAGE_HEIGHT}
+                    alt="Bye image"
+                />
             </div>
             <ContactInfo info={ContactTel}>
                 <div className="getInTouch-call-icons">

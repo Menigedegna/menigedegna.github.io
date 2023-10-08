@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 export const LineBar = styled.div`
     width: 3px; 
     height: 100%;
-    background-color: black; 
+    background-color: var(--color-dark-purple); 
 `;
 
 export const Square = styled.div`
@@ -15,7 +15,7 @@ export const Square = styled.div`
 export const HorLineBar = styled.div`
     width: 100%; 
     height: 2px;
-    background-color: black; 
+    background-color: var(--color-dark-purple); 
 `;
 
 export const Circle = styled.div`
