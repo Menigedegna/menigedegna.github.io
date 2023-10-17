@@ -17,43 +17,75 @@
   --name-font: 'Happy Monkey';
   --normal-text-font: 'Cabin';
   --top-margin: 2rem;
-  --right-margin: 5rem;
-  --left-margin: 1rem;
+  --right-margin: 3rem;
+  --left-margin: 3rem;
   --bottom-margin: 2rem;
 
-  background-color: var(--bgcolor);
+
+  background-color: var(--color-dark-purple);
   color: black;
 }
 
 /* ----------------------------------------------------------------------------------------------------- */
 
+/* APP */
+
+.App{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#page-body{
+  border-radius: 0 0 2rem 2rem;
+  background-color: var(--bgcolor);
+  height: 1fr;
+  margin-top: auto;
+
+}
+/* ----------------------------------------------------------------------------------------------------- */
 
 /* NAVIGATION BAR */
 
 .nav_bar {
   overflow: hidden;
-  width: 95%;
-  height: 4rem;
-  margin-left: var(--left-margin);
-  margin-right: var(--right-margin);
+  width: 99.5vw;
+  height: 3.5rem;
   display: flex;
-  justify-content: space-between;
-  border-radius: .5rem;
+  margin: 0 0.1rem;
+  padding: 1rem .2rem;
+  gap: .2rem;
+  background-color: var(--color-dark-purple);
+  border-radius: 0 0 2rem 2rem;
 }
 
 .nav_link {
+  height: 90%;
   float: left;
-  background-color: var(--color-dark-purple);
   color: white;
   font-family: var(--normal-text-font);
   font-size: 1.3rem;
   font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 14px 16px;
+  margin: auto;
   text-decoration: none;
-  width: 18%;
   border: .2rem solid var(--color-yellow);
-  /* border-radius: .8rem; */
+  width: 100%;
+}
+
+#left_outer_link{
+  border-radius: .5rem .5rem .5rem 5rem;
+}
+
+#right_outer_link{
+  border-radius: .5rem .5rem 2rem .5rem;
+}
+
+.inner_nav{
+  border-radius: .5rem;
 }
 
 .nav_link:hover {
@@ -69,11 +101,6 @@
 
 /* ----------------------------------------------------------------------------------------------------- */
 /* ALL PAGE */
-
-
-#page-body{
-  height: 87vh;
-}
 
 .framed-page{
   margin: var(--top-margin) var(--right-margin) var(--bottom-margin) var(--left-margin);
@@ -136,81 +163,43 @@
 
 /* HOME PAGE */
 
-.home-left-screen{
-  gap: 29vh;
-}
-.name-tag{
-  display: flex;
-  gap: 33px;
-  height: 80px;
+.home-page{
+  --hor-gap: 15vh;
 }
 
-#author-name{
-  font-size: 25px;
-  font-family: var(--name-font);
-  font-weight: 400;
-  align-self: center;
+.home-left-screen{
+  gap: var(--hor-gap);
 }
 
 .title-tag{
   display: flex;
   flex-direction: column;
   font-family: var(--title-font);
-  color: var(--color-white);
   text-align: left;
 }
 
-.career-path, .doc-title{
-  font-size: 50px;
-  font-weight: 300;
-}
-
 .career-path{
-  width: 30rem;
-  /* background-color: var(--color-yellow); */
-  background-color: #AF5845;
-  padding: 2rem 2rem;
-}
-
-.doc-title{
-  font-size: 90px;
+  font-size: 60px;
+  width: 80%;
   font-weight: 400;
-  transform-origin: left;
-  color: var(--color-dark-purple);
-}
-@media only screen and (min-width: 769px){
-  .doc-title{
-    font-weight: 700;
-    transform: scale(1.5, 1);
-  }
+  color: white;
+  text-align: left;
+
 }
 
 .home-right-screen{
   display: flex;
   flex-direction: column;
   height: 100%;
-  align-items: flex-end;
-  gap: 10vh;
-}
-
-.home-photo-container{
-  display: flex;
-  width: 100%;
-  height: 70%;
-  justify-content: center;
   align-items: center;
+  padding-top: 2rem;
+  gap: var(--hor-gap);
+}
+#horizontal-line-home{
+  align-items: flex-end;
 }
 
-.photo-home{
-  background-color: var(--color-gray);
-}
-/* ----------------------------------------------------------------------------------------------------- */
 
-/* ABOUT ME PAGE */
-
-.aboutMe-center-container{
-  gap: 20vh;
-}
 
 .aboutMe-left-screen{
   display: flex;
@@ -236,7 +225,7 @@
 }
 .aboutMe-author{
   font-weight: 700;
-  font-size: 65px;
+  font-size: 3.5rem;
   transform-origin: left;
   letter-spacing: 6px;
 }
@@ -251,11 +240,6 @@
   text-align: center;
 }
 
-#photo_2{
-  align-self: center;
-  width: 100%;
-  height: 80%;
-}
 
 .aboutMe-contact-container{
   display: flex;
@@ -589,4 +573,19 @@
 }
 .getInTouch-message-container{
   padding-bottom: 2rem;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* FOOTER */
+footer{
+  font-size: 1.2rem;
+  font-family: var(--normal-text-font);
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  padding: .8rem 0;
+  margin-top: auto;
+  
 }

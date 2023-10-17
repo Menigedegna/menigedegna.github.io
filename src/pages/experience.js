@@ -29,7 +29,7 @@ const GalleryLoader = ({image, id, arr}) =>{
                 <div className="experience-company">{arr.company}</div>
                 <div className="experience-date">({arr.date})</div>
                 <div className="experience-desc">{arr.description}</div>
-                <a className="experience-button" href={arr.exLink}>View</a>
+                <a className="experience-button" href={arr.exLink} target="_blank" rel="noreferrer">View</a>
             </div>
         </div>   
     );

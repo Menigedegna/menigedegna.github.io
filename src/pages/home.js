@@ -1,18 +1,41 @@
 import { SplitScreen, HorizSplitScreen } from "../components/SpliScreen";
-import { LineBar, HorLineBar } from "../components/shapes";
+// import { LineBar, HorLineBar } from "../components/shapes";
+import { HorLineBar } from "../components/shapes";
+import { AboutMePageContent } from "../components/contents";
+import DocumentPDF from '../Ashenafi_resume_software_developer.pdf';
 import Image1 from "../images/dark-work-profile.png";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-const IMAGE_WIDTH = 720;
-const IMAGE_HEIGHT = 470;
+const IMAGE_HEIGHT = 400;
 
 
-const NameTag = () => {
-    return(
-        <div className='name-tag'>
-            <LineBar id='author-bar'></LineBar>
-            <div id='author-name'>Mariamawit<br/>S. Ashenafi</div>
+const UpperLeftHandComponent = () => {
+    return (
+        <div className="aboutMe-left-screen">
+            <div className='aboutMe-title'>
+                <div className="aboutMe-title-container">
+                    <div className="aboutMe-title">Hi, I am</div>
+                    <HorLineBar />
+                </div>
+                <div className="aboutMe-author"><span style={{color:'var(--color-red)'}}>Mariamawit</span> Ashenafi</div>
+            </div>
+            <div className="normal_text" id="aboutMe-text"  dangerouslySetInnerHTML= {{ __html : AboutMePageContent }}/>
+            <div className="aboutMe-contact-container">      
+                <a
+                href={DocumentPDF}
+                download="Resume_Ashenafi"
+                target="_blank"
+                rel="noreferrer"
+                >
+                    <button className="submit-button">Resume</button>
+                </a>
+                <div className='aboutMe-tag-container'>
+                    <a className="aboutMe-contact-tags submit-button" href="https://www.linkedin.com/in/mariamawit-ashenafi/" target="_blank" rel="noreferrer"><i className="fa fa-linkedin-square fa-3x" aria-hidden="true"></i> </a>
+                    <a className="aboutMe-contact-tags submit-button" href="https://github.com/Menigedegna/" target="_blank" rel="noreferrer"><i className="fa fa-github fa-3x" aria-hidden="true"></i> </a>
+                </div>
+
+            </div>
         </div>
     )
 }
@@ -21,8 +44,8 @@ const NameTag = () => {
 const TitleTag = () => {
     return (
         <div className="title-tag">
-            <div className="career-path">Full Stack Developer</div>
-            <div className="doc-title">Portfolio</div>
+            <div className="aboutMe-title">Welcome to my</div>
+            <div className="career-path">Portfolio</div>
         </div>
     )
 }
@@ -30,7 +53,7 @@ const TitleTag = () => {
 const LeftHandComponent = () => {
     return (
         <HorizSplitScreen topWeight={3} bottomWeight={4} className={"home-left-screen"}>
-            <NameTag/>
+            <UpperLeftHandComponent />
             <TitleTag />
         </HorizSplitScreen>
     )
@@ -39,12 +62,9 @@ const LeftHandComponent = () => {
 const RightHandComponent = () => {
     return (
         <div className="home-right-screen">
-            <div className="home-photo-container">
-                    <LazyLoadImage src={Image1} className="experience-image"
-                        width={IMAGE_WIDTH} height={IMAGE_HEIGHT}
-                        alt="Screenshot of product"
-                    />
-            </div>
+            <LazyLoadImage src={Image1} className="home-photo-container" height={IMAGE_HEIGHT}
+                alt="Screenshot of product"
+            />
             <HorLineBar id='horizontal-line-home' />
 
         </div>
@@ -56,7 +76,7 @@ const RightHandComponent = () => {
 
 const HomePage = () => {
     return (
-        <SplitScreen leftWeight={5} rightWeight={6} className='framed-page'>
+        <SplitScreen leftWeight={5} rightWeight={6} className='framed-page home-page'>
             <LeftHandComponent />
             <RightHandComponent />
         </SplitScreen>

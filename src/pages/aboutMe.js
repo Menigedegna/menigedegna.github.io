@@ -7,7 +7,7 @@ import { HorLineBar } from "../components/shapes";
 import DocumentPDF from '../Ashenafi_resume_software_developer.pdf';
 
 
-const LeftHandComponent = () => {
+export const LeftHandComponent = () => {
     return (
         <div className="aboutMe-left-screen">
             <div className='aboutMe-title'>

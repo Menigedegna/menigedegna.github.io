@@ -9,13 +9,15 @@ import ExperiencePage from './pages/experience';
 import WorkPage from './pages/work';
 import ContactPage from './pages/getInTouch';
 import NotFoundPage from './pages/notFoundPage';
+import { Footer } from './footer';
+
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <NavBar page='home'/>
         <div id="page-body">
+          <NavBar page='home'/>
           <Routes>
             <Route path="/" element={<HomePage />}></Route>
             <Route path="/about" element={<AboutMePage />}></Route>
@@ -25,6 +27,7 @@ function App() {
             <Route path="*" element={<NotFoundPage />}></Route>
           </Routes>
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );

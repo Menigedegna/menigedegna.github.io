@@ -5,8 +5,8 @@ const recommend1 = "Mariamawit showed great work ethic. She is diligent, respons
 const author1 = 'Jean-Pierre Pasquiou, Headmaster, LGM'
 const recommend2 = "Ms. Ashenafi integrated into the team quickly, and the partners praised her professionalism. During her mission, she has demonstrated rigor and autonomy, this led me to entrust the management of this project to her within few weeks. And I was pleased with the result. I recommend her ability to absorb and implement new knowledge in a short period of time."
 const author2 = 'Nicolas Condom, CEO, Ecofilae'
-const recommend3 = "I a like her because this and that."
-const author3 = "Mr Nice Guy"
+const recommend3 = recommend2
+const author3 = author2
 export const recommendations = [
     {
         author: author1,
