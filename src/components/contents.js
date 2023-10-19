@@ -26,7 +26,7 @@ const experience1={
     skills: ['HTML5', 'CSS', 'FLASK'],
     company: 'Silver Lining',
     date: '2023',
-    description: 'Developed web application to inhance visibility of startup.',
+    description: 'Developed web application to inhance visibility of startup',
     exLink: 'https://silverliningserv.com/'
 
 }
@@ -35,36 +35,36 @@ const experience2={
     skills: ['Python'],
     company: 'University of Zurich',
     date: '2014-18',
-    description: 'Developed software plugin to automate microscopy image processing.',
+    description: 'Developed software plugin to automate microscopy image processing',
     exLink: 'https://www.researchgate.net/publication/320533094_Automated_3D_gene_position_analysis_using_a_customized_Imaris_plugin_XTFISHInsideNucleus'
 
 }
 
 const experience3={
     position: 'Side Project',
-    skills: ['HTML5', 'CSS', 'FLASK'],
+    skills: ['Python'],
     company: '',
-    date: '2022-23',
-    description: 'Developed web application to store and manage passwords.',
-    exLink: 'https://silverliningserv.com/'
+    date: '2022',
+    description: 'Desktop application : crossing turtle game',
+    exLink: 'https://github.com/Menigedegna/Turtle_Crossing_Game'
 
 }
 const experience4={
     position: 'Side Project',
-    skills: ['HTML5', 'CSS', 'Django'],
+    skills: ['Python'],
     company: '',
-    date: '2020-21',
-    description: 'Developed blog application.',
-    exLink: 'https://silverliningserv.com/'
+    date: '2022',
+    description: 'Desktop application: pong-game',
+    exLink: 'https://github.com/Menigedegna/Pong_Game/'
 
 }
 const experience5={
-    position: 'Computational Biologist',
-    skills: ['R'],
-    company: 'Ecofilae',
-    date: '2013',
-    description: 'Developed web application to store and manage passwords.',
-    exLink: 'https://silverliningserv.com/'
+    position: 'Side Project',
+    skills: ['Python'],
+    company: '',
+    date: '2022',
+    description: 'Desktop application: snake-game',
+    exLink: 'https://github.com/Menigedegna/Snake_Game/'
 
 }
 

@@ -8,12 +8,16 @@
   --color-yellow: #E87E00;
   --color-dark-purple: #28181B;
   --color-light-purple: #BA9A93;
-  --bgcolor:var(--color-light-purple);
+  --color-green: #228b6e;
+  --color-purple: #a52a96;
+  --bgcolor: var(--color-green);
   --color-light-yellow: #D19E60;
   --color-black: #111211;
   --color-gray: #D9D9D9;
-  --nav-font: 'Galindo';
+  --nav-font: 'Alegreya';
+  --nav-button: 'Galindo';
   --title-font: 'Kanit';
+  --button-font: 'Roboto Condensed';
   --name-font: 'Happy Monkey';
   --normal-text-font: 'Cabin';
   --top-margin: 2rem;
@@ -50,21 +54,21 @@
 .nav_bar {
   overflow: hidden;
   width: 99.5vw;
-  height: 3.5rem;
+  height: 2rem;
   display: flex;
   margin: 0 0.1rem;
   padding: 1rem .2rem;
-  gap: .2rem;
+  gap: .8rem;
   background-color: var(--color-dark-purple);
   border-radius: 0 0 2rem 2rem;
 }
 
 .nav_link {
-  height: 90%;
+  height: 95%;
   float: left;
   color: white;
-  font-family: var(--normal-text-font);
-  font-size: 1.3rem;
+  font-family: var(--nav-font);
+  font-size: 1.5rem;
   font-weight: 700;
   display: flex;
   justify-content: center;
@@ -72,7 +76,8 @@
   text-align: center;
   margin: auto;
   text-decoration: none;
-  border: .2rem solid var(--color-yellow);
+  border: .1rem solid white;
+  background-color: var(--color-purple);
   width: 100%;
 }
 
@@ -114,12 +119,13 @@
 }
 
 .submit-button{
-  font-family: var(--title-font);
-  font-size: 1.5rem;
+  font-family: var(--button-font);
+  font-size: 1.8rem;
+  font-weight: 700;
   color: var(--color-yellow);
   letter-spacing: .02rem;
   align-self: center; 
-  background-color: var(--color-dark-purple);
+  background-color: var(--color-green);
   cursor: pointer;
   border: .2rem solid currentColor;
   border-radius: .8rem;
@@ -132,7 +138,7 @@
 .submit-button::before, .submit-button::after {
     content: '';
     position: absolute;
-    background-color: var(--color-dark-purple);
+    background-color: var(--color-green);
     z-index: -1;
     transition: all .3s;
   }
@@ -164,7 +170,7 @@
 /* HOME PAGE */
 
 .home-page{
-  --hor-gap: 15vh;
+  --hor-gap: 20vh;
 }
 
 .home-left-screen{
@@ -211,6 +217,9 @@
 .aboutMe-title{
   display: flex;
   flex-direction: column;
+  font-family: var(--button-font);
+  font-size: 2.2rem;
+  font-weight: bold;
   gap: 20px;
 }
 .aboutMe-title-container{
@@ -224,6 +233,7 @@
   font-size: 40px;
 }
 .aboutMe-author{
+  font-family: var(--nav-font);
   font-weight: 700;
   font-size: 3.5rem;
   transform-origin: left;
@@ -268,11 +278,12 @@
   width: 100%;
   /* gap: 5rem; */
 }
-.work-photo{
+.work-photo-container{
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 
 .work-citation{
   flex:0.7;
@@ -284,6 +295,16 @@
 }
 .work-testimony-message{
   text-align: center;
+}
+.work-quote-decor{
+  display: flex;
+  gap: 0.8rem;
+  /* padding: 1rem; */
+
+}
+.work-testimony, .work-testimony-author{
+  width: 90%;
+  padding: 1rem;
 }
 .quote-icons{
   font-size: 1.5rem;
@@ -323,9 +344,9 @@
   opacity: 0.7;
   width: 9rem;
   aspect-ratio: 1/1;
-  font-family: var(--nav-font);
+  font-family: var(--button-font);
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
   background-color: var(--color-dark-purple);
 }
@@ -357,14 +378,16 @@
   --exp-card-color : #C4B6A5;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: center;
+  gap: .5rem;
 
 }
 
 .experience-column{
-
-  width: 515px;
-  height: 350px;
+  --card-height: 350px;
+  --card-width: 515px;
+  width: var(--card-width);
+  height: var(--card-height);
   background-color: var(--color-dark-purple);
   justify-content: center;
   align-items: center;
@@ -373,6 +396,11 @@
   display: flex;
   transition: all .3s;
   border: 2px solid var(--color-yellow);
+}
+
+.experience-image{
+  height: var(--card-height);
+  width: calc(var(--card-width) - 20px);
 }
 
 .experience-image-text{
@@ -388,7 +416,7 @@
   gap: .2rem;
   justify-content: center;
   align-items: center;
-  font-family: var(--normal-text-font);
+  font-family: var(--button-font);
   font-size: 1.2rem;
   opacity: 0;
   color: white;
@@ -420,23 +448,24 @@
   text-align: center;
 }
 .experience-button{
-  color: black;
-  font-weight: 700;
+  color: white;
+  font-family: var(--nav-button);
+  font-weight: 400;
   text-decoration: none;
-  border: .2rem solid black;
+  border: .2rem solid white;
   border-radius: .8rem;
   padding: .5rem 4rem;
-  background-color: var(--color-yellow);
+  background-color: #69293A;
 }
 .experience-button:hover{
-  border-color: white;
-  color: white;
+  background-color: var(--color-yellow);
+  color: black;
 }
 
 
 .experience-code-tag{
   color: black;
-  font-family: var(--nav-font);
+  font-family: var(--nav-button);
   font-weight: 200;
   font-size: 1.2rem;
   background-color: var(--color-light-purple);
@@ -469,7 +498,7 @@
 /* GET IN TOUCH PAGE */
 
 .getInTouch-center-container{
-  gap: 6rem;
+  gap: 1rem;
 }
 .getInTouch-column{
   width: 100%;
@@ -483,12 +512,7 @@
 .getInTouch-photo-container{
   width: 100%;
   height: 50%;
-  padding-bottom: 7rem;
-}
-#photo_4{
-  width: 100%;
-  height: 100%;
-  align-self: center;
+  padding-bottom: 4rem;
 }
 
 .getInTouch-contact-info{
@@ -500,6 +524,8 @@
   padding-bottom: 1.5rem;
 }
 .getIntouch-tag-type{
+  font-family: var(--button-font);
+  font-weight: bold;
   padding-left: .5rem;
   font-size: 1.5rem;
 }
@@ -531,7 +557,8 @@
 .getInTouch-title{
   flex:50%;
   font-weight: 700;
-  font-size: 2.2rem;
+  font-size: 2.6rem;
+  font-family: var(--button-font);
 }
 
 .getInTouch-form{
@@ -562,13 +589,14 @@
 }
 
 .getInTouch-message-label{
+  font-family: var(--button-font);
   font-size: 1.5rem;
   padding-bottom: .8rem;
 }
 .getInTouch-message-field{
   font-size: 1rem;
   width: 100%;
-  height: 20rem;
+  height: 18rem;
   padding: .5rem;
 }
 .getInTouch-message-container{

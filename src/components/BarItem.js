@@ -41,10 +41,10 @@ export const BarItem = ( {name, value, barHeight, barWidth, x, y, maxX, quarterX
         y={springProps.y}
         width={springProps.barWidth}
         height={barHeight}
-        opacity={0.7}
-        stroke='var(--color-red)'
-        fill='var(--color-red)'
-        fillOpacity={0.3}
+        opacity={1}
+        stroke='#69293A'
+        fill='#69293A'
+        fillOpacity={0.9}
         strokeWidth={1}
         rx={1}
       />
@@ -55,9 +55,9 @@ export const BarItem = ( {name, value, barHeight, barWidth, x, y, maxX, quarterX
         height={barHeight}
         opacity={1}
         fill='var(--color-dark-purple)'
-        stroke='black'
-        strokeWidth={1}
-        fillOpacity={0.9}
+        stroke='#69293A'
+        strokeWidth={3}
+        fillOpacity={1}
         rx={5}
       />
       <animated.text 
@@ -65,7 +65,7 @@ export const BarItem = ( {name, value, barHeight, barWidth, x, y, maxX, quarterX
         y={springProps.y?.to((y) => y + barHeight / 2)}
         textAnchor="start"
         alignmentBaseline="central"
-        fontFamily='var(--normal-text-font)'
+        fontFamily='var(--button-font)'
         fontSize='1.1rem'
         fill='var(--color-yellow)'
         stroke='var(--color-yellow)'

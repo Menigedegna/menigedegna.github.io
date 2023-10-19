@@ -4,7 +4,6 @@ import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import NavBar from './navBar';
 import HomePage from './pages/home';
-import AboutMePage from './pages/aboutMe';
 import ExperiencePage from './pages/experience';
 import WorkPage from './pages/work';
 import ContactPage from './pages/getInTouch';
@@ -20,7 +19,6 @@ function App() {
           <NavBar page='home'/>
           <Routes>
             <Route path="/" element={<HomePage />}></Route>
-            <Route path="/about" element={<AboutMePage />}></Route>
             <Route path="/experience" element={<ExperiencePage />}></Route>
             <Route path="/skills" element={<WorkPage />}></Route>
             <Route path="/contact" element={<ContactPage />}></Route>

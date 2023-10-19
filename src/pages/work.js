@@ -1,7 +1,5 @@
-// TODO: ASK AHMED FOR RECOMMENDATION
-// TODO: ASK AHMED TO COMPLETE WEB CONTENT
-
-import { SplitScreen, BorderFrame } from "../components/SpliScreen";
+import { SplitScreen } from "../components/SpliScreen";
+import { HorLineBar } from "../components/shapes";
 import { useState } from "react";
 import { PersDev, ComSkill, LanguageSkill, recommendations } from "../components/contents";
 import { Barplot } from "../components/Barplot";
@@ -29,7 +27,7 @@ const RightColumn = ({width, className, changeData, data, height}) =>{
     );
 }
 
-const MainContent = () => {
+const WorkPage = () => {
     const [selectedData, setSelectedData] = useState(ComSkill);
     const [height, setHeight] = useState(500);
     const [testimonyMessage, setTestimonyMessage] = useState(recommendations[0]["message"]);
@@ -42,34 +40,36 @@ const MainContent = () => {
         setTestimonyAuthor(testimony["author"]);
     }
     return(
-        <SplitScreen leftWeight={1} rightWeight={2} className={'work-center-container'}>
+        <SplitScreen leftWeight={2} rightWeight={3} className={'framed-page work-center-container'}>
             <div className="work-left-container">
-                <div className="work-photo">
-                    <LazyLoadImage src={Image1} className="experience-image"
+                <div className="work-photo-container">
+                    <LazyLoadImage src={Image1} className="work-photo"
                         width={IMAGE_WIDTH} height={IMAGE_HEIGHT}
                         alt="Screenshot of product"
                     />
                 </div>
                 <div className="work-citation">
                     <div className="work-testimony-message">
-                        <i class="fa fa-quote-left quote-icons" id="quote-left" aria-hidden="true"></i>
-                        {testimonyMessage}
-                        <i class="fa fa-quote-right quote-icons" id="quote-right" aria-hidden="true"></i>
+                        <div className='work-quote-decor'>
+                            <i class="fa fa-quote-left quote-icons" id="quote-left" aria-hidden="true"></i>
+                            <HorLineBar id="work-horLine"/>
+                        </div>
+                        <div className="work-testimony">
+                            {testimonyMessage}
+                        </div>
+                        <div className="work-testimony-author">
+                            -  {testimonyAuthor} 
+                        </div>
+                        <div className='work-quote-decor'>
+                            <HorLineBar id="work-horLine"/>
+                            <i class="fa fa-quote-right quote-icons" id="quote-right" aria-hidden="true"></i>
+                        </div>
                     </div>
-                    <div className="work-testimony-author">
-                        -  {testimonyAuthor} 
-                    </div>
+
                 </div>
             </div>
             <RightColumn width={800} className='work-right-container' changeData={changeData} data={selectedData} height={height} />
         </SplitScreen>
-    );
-}
-const WorkPage = () => {
-    return (
-        <BorderFrame displacement={'340%'}>
-            <MainContent />
-        </BorderFrame>
     );
 }
 

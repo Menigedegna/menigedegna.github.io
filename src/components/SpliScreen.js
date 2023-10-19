@@ -59,32 +59,3 @@ export const HorizSplitScreen = ({
         </ContainerHor>
     )
 };
-
-const Well = styled.div`
-    background-color: var(--color-yellow);
-    border-radius: .5rem;
-    width: 77%;
-    aspect-ratio: 1/1;
-    rotate: -45deg;
-    translate: .55rem ${props => props.displacement};
-    transition: all .3s;
-`;
-
-export const BorderFrame = ({
-    children,
-    displacement = 0,
-    className="framed-page"
-}) => {
-    console.log("child");
-    console.log(children);
-    return (
-        <Container className={className}>
-            <Pane weight={0.5} className="left-border-decor">
-                <Well displacement={displacement}/>
-            </Pane>
-            <Pane weight={10}>
-                {children}
-            </Pane>
-        </Container>
-    )
-};

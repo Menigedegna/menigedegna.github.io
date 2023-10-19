@@ -1,23 +1,20 @@
-// TODO: CREATE WEB APP FOR PASSWORD MANAGER
-
-import { BorderFrame } from "../components/SpliScreen";
 import { experienceArray } from "../components/contents";
 import Image1 from "../images/silver_lining.png";
 import Image2 from "../images/XTSpotIntensity_snapshot.png";
-// import Image3 from "../images/XT.png";
+import Image3 from "../images/crossing_turtle_screenshot.png";
+import Image4 from "../images/pong_game_screenshot.png";
+import Image5 from "../images/Snake_game.png";
+
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { HorLineBar } from "../components/shapes";
 
-const IMAGE_WIDTH = 515 - 20;
-const IMAGE_HEIGHT = 350;
-const IMAGE_ARRAY = [Image1, Image2, Image2, Image2, Image2]
+const IMAGE_ARRAY = [Image1, Image2, Image3, Image4, Image5]
 
 const GalleryLoader = ({image, id, arr}) =>{
     return(
         <div className="experience-column" id={id}>
             <LazyLoadImage src={image} className="experience-image"
-                width={IMAGE_WIDTH} height={IMAGE_HEIGHT}
                 alt="Screenshot of product"
             />
             <div className="experience-image-text">
@@ -38,18 +35,16 @@ const GalleryLoader = ({image, id, arr}) =>{
 
 const ExperiencePage = () => {
     return (
-        <BorderFrame displacement={'680%'}>
-            <div className='experienc-main-container'>
-                {experienceArray.map((item, id) => (
-                <div className="experience-column">
-                    <GalleryLoader 
-                        id={`'column'${id}`} 
-                        image={IMAGE_ARRAY[id]}
-                        arr={item}/>         
-                </div>
-                ))}
+        <div className='framed-page experienc-main-container'>
+            {experienceArray.map((item, id) => (
+            <div className="experience-column">
+                <GalleryLoader 
+                    id={`'column'${id}`} 
+                    image={IMAGE_ARRAY[id]}
+                    arr={item}/>         
             </div>
-        </BorderFrame>
+            ))}
+        </div>
     );
 }
 

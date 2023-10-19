@@ -18,7 +18,7 @@ const UpperLeftHandComponent = () => {
                     <div className="aboutMe-title">Hi, I am</div>
                     <HorLineBar />
                 </div>
-                <div className="aboutMe-author"><span style={{color:'var(--color-red)'}}>Mariamawit</span> Ashenafi</div>
+                <div className="aboutMe-author"><span style={{color:'white'}}>Mariamawit</span> Ashenafi</div>
             </div>
             <div className="normal_text" id="aboutMe-text"  dangerouslySetInnerHTML= {{ __html : AboutMePageContent }}/>
             <div className="aboutMe-contact-container">      

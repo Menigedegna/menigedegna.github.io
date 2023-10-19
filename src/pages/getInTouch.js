@@ -1,6 +1,4 @@
-// TODO: when you buy a domain, change email
-
-import { SplitScreen, BorderFrame } from "../components/SpliScreen";
+import { SplitScreen } from "../components/SpliScreen";
 import { ContactEmail, ContactTel } from "../components/contents";
 import { HorLineBar } from "../components/shapes";
 import { ContactForm } from "../components/contactForm";
@@ -24,7 +22,6 @@ const ColumnOne = () => {
     return(
         <div className="getInTouch-column">
             <div className="getInTouch-photo-container">
-                {/* <div className="photo-home" id="photo_4"></div> */}
                 <LazyLoadImage src={Image1} className="bye-image"
                     width={IMAGE_WIDTH} height={IMAGE_HEIGHT}
                     alt="Bye image"
@@ -60,20 +57,12 @@ const ColumnTwo = () => {
     );
 }
 
-const MainContent = () => {
+const ContactPage = () => {
     return(
-        <SplitScreen leftWeight={1} rightWeight={1} className={'getInTouch-center-container'}>
+        <SplitScreen leftWeight={1} rightWeight={1} className={'framed-page getInTouch-center-container'}>
             <ColumnOne />
             <ColumnTwo />
         </SplitScreen>
-    );
-}
-
-const ContactPage = () => {
-    return (
-        <BorderFrame displacement={'1050%'}>
-            <MainContent />
-        </BorderFrame>
     );
 }
 
