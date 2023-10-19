@@ -2,6 +2,7 @@
 // TODO: INACTIVATE SUBMIT BUTTON IF ERROR IS NOT EMPTY
 
 import { useState } from "react";
+import axios from 'axios';
 
 export const ContactForm = () => {
     const [status, setStatus] = useState("Send Message");
@@ -22,16 +23,13 @@ export const ContactForm = () => {
                 email: email,
                 message: message
               };
+            let header = {
+                "Content-Type": "application/json;charset=utf-8",
+              }
             try {
-                let response = await fetch("http://localhost:5000/contact", {
-                    method: "POST",
-                    headers: {
-                      "Content-Type": "application/json;charset=utf-8",
-                    },
-                    body: JSON.stringify(details),
-                  });
+                const response = await axios.post(`/contact`, details,{headers: header});
                 setStatus("Submit");
-                let result = await response.json();
+                let result = await response.data;
                 alert(result.status);
             } catch(e){
                 setError(e.message)
