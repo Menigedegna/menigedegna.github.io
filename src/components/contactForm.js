@@ -4,26 +4,40 @@
 import { useState } from "react";
 
 export const ContactForm = () => {
+    const [status, setStatus] = useState("Send Message");
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [message, setMessage] = useState('');
     const [error, setError] = useState('');
 
 
-    const handleSubmit = event  => {
-        event.preventDefault();
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setStatus("Sending...");
         if (name.length<4 || /\d/.test(name)){
             setError("Please provide a valid name");
-        }else{
+         }else{
+            let details = {
+                name: name,
+                email: email,
+                message: message
+              };
             try {
-                // send email
-                setError("Thank you for getting in touch. Your message is send.")
+                let response = await fetch("http://localhost:5000/contact", {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/json;charset=utf-8",
+                    },
+                    body: JSON.stringify(details),
+                  });
+                setStatus("Submit");
+                let result = await response.json();
+                alert(result.status);
             } catch(e){
-                setError(e.message);
+                setError(e.message)
             }
         }
-
-    }
+      };
 
     return(
         <form className='getInTouch-form' onSubmit={handleSubmit}>
@@ -51,7 +65,7 @@ export const ContactForm = () => {
                 column="50"
                 required/>
             </label>
-            <button type='submit' className="submit-button">Send Message</button>
+            <button type='submit' className="submit-button">{status}</button>
         </form>
     );
 }
