@@ -59,7 +59,7 @@ const ColumnTwo = () => {
 
 const ContactPage = () => {
     return(
-        <SplitScreen leftWeight={1} rightWeight={1} className={'framed-page getInTouch-center-container'}>
+        <SplitScreen leftWeight={1} rightWeight={1} className={'margined-page wrapped-page getInTouch-center-container'}>
             <ColumnOne />
             <ColumnTwo />
         </SplitScreen>

@@ -35,7 +35,7 @@ const GalleryLoader = ({image, id, arr}) =>{
 
 const ExperiencePage = () => {
     return (
-        <div className='framed-page experienc-main-container'>
+        <div className='margined-page wrapped-page experienc-main-container'>
             {experienceArray.map((item, id) => (
             <div className="experience-column">
                 <GalleryLoader 

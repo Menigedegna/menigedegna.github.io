@@ -1,10 +1,11 @@
 import { SplitScreen } from "../components/SpliScreen";
 import { HorLineBar } from "../components/shapes";
-import { useState } from "react";
+import { useState, useRef} from "react";
 import { PersDev, ComSkill, LanguageSkill, recommendations } from "../components/contents";
 import { Barplot } from "../components/Barplot";
 import Image1 from "../images/profile_picture.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 const BUTTONS_HEIGHT = 50;
 const IMAGE_WIDTH = 300;
@@ -32,6 +33,7 @@ const WorkPage = () => {
     const [height, setHeight] = useState(500);
     const [testimonyMessage, setTestimonyMessage] = useState(recommendations[0]["message"]);
     const [testimonyAuthor, setTestimonyAuthor] = useState(recommendations[0]["author"]);
+    const windowWidth = useRef(window.innerWidth)
 
     const changeData = (data, height, testimony) =>{
         setSelectedData(data);
@@ -40,7 +42,7 @@ const WorkPage = () => {
         setTestimonyAuthor(testimony["author"]);
     }
     return(
-        <SplitScreen leftWeight={2} rightWeight={3} className={'framed-page work-center-container'}>
+        <SplitScreen leftWeight={2} rightWeight={3} className={'margined-page wrapped-page work-center-container'}>
             <div className="work-left-container">
                 <div className="work-photo-container">
                     <LazyLoadImage src={Image1} className="work-photo"
@@ -48,6 +50,7 @@ const WorkPage = () => {
                         alt="Profile picture"
                     />
                 </div>
+                
                 <div className="work-citation">
                     <div className="work-testimony-message">
                         <div className='work-quote-decor'>
@@ -65,10 +68,9 @@ const WorkPage = () => {
                             <i class="fa fa-quote-right quote-icons" id="quote-right" aria-hidden="true"></i>
                         </div>
                     </div>
-
                 </div>
             </div>
-            <RightColumn width={800} className='work-right-container' changeData={changeData} data={selectedData} height={height} />
+            <RightColumn width={windowWidth.current>800?800:500} className='work-right-container' changeData={changeData} data={selectedData} height={height} />
         </SplitScreen>
     );
 }

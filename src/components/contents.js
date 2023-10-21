@@ -1,5 +1,5 @@
 const email = "mariamawit.ashenafi2011@gmail.com"
-export const AboutMePageContent = `I am a software developer; passionate about creating impactful and user-friendly applications. <br/>Make sure you have a look at my latest projects.`;
+export const AboutMePageContent = `I am a software developer, passionate about creating impactful and user-friendly applications. <br/>Make sure you have a look at my latest projects.`;
 const recommend1 = "Mariamawit showed great work ethic. She is diligent, responsive, organized, responsibile and takes initiatives. She adapted quickly to a new profession and a new enviornment, while demonstrating integrity. She was available to listen to others, she was able to maintain an effective relationship with her students and their parents. Her teamwork and effective communication were appreciated by her colleagues."
 const author1 = 'Jean-Pierre Pasquiou, Headmaster, LGM'
 const recommend2 = "Ms. Ashenafi integrated into the team quickly, and the partners praised her professionalism. During her mission, she has demonstrated rigor and autonomy, this led me to entrust the management of this project to her within few weeks. And I was pleased with the result. I recommend her ability to absorb and implement new knowledge in a short period of time."
