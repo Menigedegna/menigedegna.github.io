@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.07487b95.css",
+    "main.js": "/static/js/main.666eb5e1.js",
+    "static/js/787.eef0f175.chunk.js": "/static/js/787.eef0f175.chunk.js",
+    "static/media/dark-bye-work-profile.png": "/static/media/dark-bye-work-profile.e5fc18f5f5230f95f198.png",
+    "static/media/dark-work-profile.png": "/static/media/dark-work-profile.a2f8d6e018ec14fdd97c.png",
+    "static/media/XTSpotIntensity_snapshot.png": "/static/media/XTSpotIntensity_snapshot.8b972409933346197ba8.png",
+    "static/media/profile_picture.png": "/static/media/profile_picture.3a1340690cff387879cc.png",
+    "static/media/silver_lining.png": "/static/media/silver_lining.783b76dd0e584b060c42.png",
+    "static/media/Ashenafi_resume_software_developer.pdf": "/static/media/Ashenafi_resume_software_developer.9c64de5990cbd34fb0f3.pdf",
+    "static/media/crossing_turtle_screenshot.png": "/static/media/crossing_turtle_screenshot.9f089aea744c818243dc.png",
+    "static/media/pong_game_screenshot.png": "/static/media/pong_game_screenshot.76cfd568535fc22f70a1.png",
+    "static/media/Snake_game.png": "/static/media/Snake_game.57630ac84769719e837a.png",
+    "index.html": "/index.html",
+    "main.07487b95.css.map": "/static/css/main.07487b95.css.map",
+    "main.666eb5e1.js.map": "/static/js/main.666eb5e1.js.map",
+    "787.eef0f175.chunk.js.map": "/static/js/787.eef0f175.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07487b95.css",
+    "static/js/main.666eb5e1.js"
+  ]
+}
