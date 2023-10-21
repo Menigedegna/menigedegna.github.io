@@ -448,7 +448,7 @@
 
 .experience-column{
   --card-height: 350px;
-  --card-width: 515px;
+  --card-width: 450px;
   width: var(--card-width);
   height: var(--card-height);
   background-color: rgba(5, 48, 28, 0.5)  ;
