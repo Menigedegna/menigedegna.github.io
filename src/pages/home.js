@@ -16,7 +16,6 @@ const HomePage = () => {
             </div>
             {/* NAME, PROFILE DESCRIPTION AND LINKS: RESUME AND SOCIAL MEDIA*/}
             <div className="aboutMe-profile_desc">
-                <div>I added this</div>
                 <div className="aboutMe-author"><span style={{color:'white'}}>Mariamawit</span> Ashenafi</div>
                 <div className="normal_text" id="aboutMe-desc"  dangerouslySetInnerHTML= {{ __html : AboutMePageContent }}/>
                 <div className="aboutMe-contact-container">      

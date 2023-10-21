@@ -5,8 +5,6 @@ import { ContactForm } from "../components/contactForm";
 import Image1 from "../images/dark-bye-work-profile.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-const IMAGE_WIDTH = 650;
-const IMAGE_HEIGHT = 400;
 
 const ContactInfo = ({children, info}) => {
     return(
@@ -23,7 +21,6 @@ const ColumnOne = () => {
         <div className="getInTouch-column">
             <div className="getInTouch-photo-container">
                 <LazyLoadImage src={Image1} className="bye-image"
-                    width={IMAGE_WIDTH} height={IMAGE_HEIGHT}
                     alt="Profile picture"
                 />
             </div>
