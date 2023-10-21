@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5fe51e77.css",
-    "main.js": "/static/js/main.170c3563.js",
+    "main.css": "/static/css/main.b37b484d.css",
+    "main.js": "/static/js/main.e4b436f1.js",
     "static/js/787.eef0f175.chunk.js": "/static/js/787.eef0f175.chunk.js",
     "static/media/dark-bye-work-profile.png": "/static/media/dark-bye-work-profile.e5fc18f5f5230f95f198.png",
     "static/media/dark-work-profile.png": "/static/media/dark-work-profile.a2f8d6e018ec14fdd97c.png",
@@ -13,12 +13,12 @@
     "static/media/pong_game_screenshot.png": "/static/media/pong_game_screenshot.76cfd568535fc22f70a1.png",
     "static/media/Snake_game.png": "/static/media/Snake_game.57630ac84769719e837a.png",
     "index.html": "/index.html",
-    "main.5fe51e77.css.map": "/static/css/main.5fe51e77.css.map",
-    "main.170c3563.js.map": "/static/js/main.170c3563.js.map",
+    "main.b37b484d.css.map": "/static/css/main.b37b484d.css.map",
+    "main.e4b436f1.js.map": "/static/js/main.e4b436f1.js.map",
     "787.eef0f175.chunk.js.map": "/static/js/787.eef0f175.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5fe51e77.css",
-    "static/js/main.170c3563.js"
+    "static/css/main.b37b484d.css",
+    "static/js/main.e4b436f1.js"
   ]
 }
