@@ -45,7 +45,7 @@ const WorkPage = () => {
                 <div className="work-photo-container">
                     <LazyLoadImage src={Image1} className="work-photo"
                         width={IMAGE_WIDTH} height={IMAGE_HEIGHT}
-                        alt="Screenshot of product"
+                        alt="Profile picture"
                     />
                 </div>
                 <div className="work-citation">

@@ -63,7 +63,7 @@ const RightHandComponent = () => {
     return (
         <div className="home-right-screen">
             <LazyLoadImage src={Image1} className="home-photo-container" height={IMAGE_HEIGHT}
-                alt="Screenshot of product"
+                alt="Profile picture"
             />
             <HorLineBar id='horizontal-line-home' />
 

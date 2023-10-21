@@ -24,7 +24,7 @@ const ColumnOne = () => {
             <div className="getInTouch-photo-container">
                 <LazyLoadImage src={Image1} className="bye-image"
                     width={IMAGE_WIDTH} height={IMAGE_HEIGHT}
-                    alt="Bye image"
+                    alt="Profile picture"
                 />
             </div>
             <ContactInfo info={ContactTel}>
@@ -32,7 +32,7 @@ const ColumnOne = () => {
                     <i className="fa fa-phone decor-icons" aria-hidden="true"></i>
                     <i className="fa fa-whatsapp decor-icons" aria-hidden="true"></i>
                     <i className="fa fa-telegram decor-icons" aria-hidden="true"></i>
-                    <div className="getIntouch-tag-type">Call</div>
+                    <div className="getIntouch-tag-type">Call / Text</div>
                 </div>
             </ContactInfo>
             <ContactInfo info={ContactEmail}>
