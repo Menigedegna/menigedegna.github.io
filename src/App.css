@@ -396,7 +396,7 @@
 }
 
 .work-skills_icons{
-  width: 90%;
+  width: 95%;
   display: flex;
   justify-content: space-between;
 }
@@ -448,7 +448,7 @@
 
 .experience-column{
   --card-height: 300px;
-  --card-width: 320px;
+  --card-width: 330px;
   width: var(--card-width);
   height: var(--card-height);
   background-color: rgba(5, 48, 28, 0.5)  ;
@@ -679,13 +679,18 @@
   padding-bottom: 1rem;
 }
 .bye-image{
-  width: 80%;
+  width: 330px;
+}
+@media(min-width: 800px){
+  .bye-image{
+    width: 80%;
+  }
 }
 /* ----------------------------------------------------------------------------------------------------- */
 
 /* FOOTER */
 footer{
-  font-size: .5rem;
+  font-size: .8rem;
   font-family: var(--normal-text-font);
   font-weight: bold;
   text-align: center;

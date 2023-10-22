@@ -1,7 +1,7 @@
 // TODO: remove all console.log()
 
 import './App.css';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {HashRouter, Routes, Route} from 'react-router-dom';
 import NavBar from './navBar';
 import HomePage from './pages/home';
 import ExperiencePage from './pages/experience';
@@ -13,13 +13,13 @@ import { Footer } from './footer';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <div id="page-body">
           <NavBar page='home'/>
           <Routes>
             <Route path="/" element={<HomePage />}></Route>
-            <Route path="/experience" element={<ExperiencePage />}></Route>
+            <Route path="/projects" element={<ExperiencePage />}></Route>
             <Route path="/skills" element={<WorkPage />}></Route>
             <Route path="/contact" element={<ContactPage />}></Route>
             <Route path="*" element={<NotFoundPage />}></Route>
@@ -27,7 +27,7 @@ function App() {
         </div>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

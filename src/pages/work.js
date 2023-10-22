@@ -70,7 +70,7 @@ const WorkPage = () => {
                     </div>
                 </div>
             </div>
-            <RightColumn width={windowWidth.current>=800?700:300} className='work-right-container' changeData={changeData} data={selectedData} height={height} />
+            <RightColumn width={windowWidth.current>=800?700:330} className='work-right-container' changeData={changeData} data={selectedData} height={height} />
         </SplitScreen>
     );
 }
