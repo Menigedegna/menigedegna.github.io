@@ -2,6 +2,7 @@ import { HorLineBar } from "../components/shapes";
 import { AboutMePageContent } from "../components/contents";
 import DocumentPDF from '../Ashenafi_resume_software_developer.pdf';
 import Image1 from "../images/dark-work-profile.png";
+import Image2 from "../images/closing_image.png";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -35,7 +36,12 @@ const HomePage = () => {
             </div>
             {/* PROFILE IMAGE */}
             <LazyLoadImage src={Image1} className="home-photo-container" alt="Profile picture"/>
+            {/* CLOSING IMAGE */}
+            <div className="closing-image-container">
+                <LazyLoadImage src={Image2} className="closing-photo" alt="Flower picture"/>
+            </div>
         </div>
+
     );
 }
 

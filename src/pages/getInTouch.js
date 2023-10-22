@@ -3,6 +3,8 @@ import { ContactEmail, ContactTel } from "../components/contents";
 import { HorLineBar } from "../components/shapes";
 import { ContactForm } from "../components/contactForm";
 import Image1 from "../images/dark-bye-work-profile.png";
+import Image2 from "../images/closing_image.png";
+
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
@@ -45,18 +47,16 @@ const ColumnOne = () => {
 const ColumnTwo = () => {
     return(
         <div className="getInTouch-column" id="column-right">
-            <div className="getInTouch-title-container">
-                <div className="getInTouch-title">What's on your mind?</div>
-                <HorLineBar />
-            </div>
-            <ContactForm />
+            <LazyLoadImage src={Image2} className="flower-image"
+                alt="Flower picture"
+            />
         </div>
     );
 }
 
 const ContactPage = () => {
     return(
-        <SplitScreen leftWeight={1} rightWeight={1} className={'margined-page wrapped-page getInTouch-center-container'}>
+        <SplitScreen leftWeight={1} rightWeight={1} className={'margined-page wrapped-page'} id={'getInTouch-center-container'}>
             <ColumnOne />
             <ColumnTwo />
         </SplitScreen>
