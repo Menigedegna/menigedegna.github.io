@@ -17,7 +17,7 @@ const GalleryLoader = ({image, id, arr}) =>{
             <LazyLoadImage src={image} className="experience-image"
                 alt="Screenshot of product"
             />
-            <div className="experience-ShowMe">{">> Show Me <<"}</div>
+            <div className="experience-ShowMe">{">  Show Me  <"}</div>
             <div className="experience-image-text">
                 <div className="experience-position">{arr.position}</div>
                 <HorLineBar id="experience-horLine"/>

@@ -35,14 +35,6 @@ const HomePage = () => {
             </div>
             {/* PROFILE IMAGE */}
             <LazyLoadImage src={Image1} className="home-photo-container" alt="Profile picture"/>
-            {/* DOCUMENT TITLE AND HORIZONTAL LINE */}
-            <div className="aboutMe-document-closing">
-                <HorLineBar id='horizontal-line-home' />
-                <div className="title-tag">
-                    <div className="aboutMe-greeting" id="aboutMe-greeting-closing">Welcome to my</div>
-                    <div className="career-path">Portfolio</div>
-                </div> 
-            </div>
         </div>
     );
 }
