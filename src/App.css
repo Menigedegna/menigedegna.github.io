@@ -259,9 +259,8 @@
   "icons"
   "about"
   ;
-  /* flex-direction: column; */
   font-family: var(--normal-text-font);
-  gap: 1.2rem;
+  grid-row-gap: 2rem;
   width: 90%;
   justify-self: center;
   align-items: center;
@@ -288,6 +287,7 @@
   .aboutMe-profile_desc{
     display: flex;
     flex-direction: column;
+    gap: 1.2rem;
     align-items: flex-start;
     width: 100%;
   }
@@ -299,7 +299,7 @@
     text-align: left;
   }
   .aboutMe-contact-tags{
-    font-size: 1rem !important;
+    font-size: .8rem !important;
   }
   #aboutMe-resume{
     font-size: 2rem !important;
