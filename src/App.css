@@ -476,6 +476,16 @@
   width: calc(var(--card-width) - 20px);
   opacity: 0.9;
 }
+.experience-ShowMe{
+  position: absolute;
+  align-self: center;
+  z-index:1;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.568);
+  padding: 2rem;
+}
 
 .experience-image-text{
   display: flex;
@@ -557,7 +567,9 @@
   border-radius: 1rem;
 }
 
-
+.experience-column:hover .experience-ShowMe{
+  display: none;
+}
 .experience-column:hover .experience-image{
   transition: all .3s;
   opacity: .1;
