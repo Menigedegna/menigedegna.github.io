@@ -396,7 +396,7 @@
 }
 
 .work-skills_icons{
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
 }
@@ -448,7 +448,7 @@
 
 .experience-column{
   --card-height: 300px;
-  --card-width: 350px;
+  --card-width: 320px;
   width: var(--card-width);
   height: var(--card-height);
   background-color: rgba(5, 48, 28, 0.5)  ;
@@ -679,12 +679,7 @@
   padding-bottom: 1rem;
 }
 .bye-image{
-  width: 15rem;
-}
-@media(min-width: 800px){
-  .bye-image{
-    width: 30rem;
-  }
+  width: 80%;
 }
 /* ----------------------------------------------------------------------------------------------------- */
 
