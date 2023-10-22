@@ -33,7 +33,8 @@ const WorkPage = () => {
     const [height, setHeight] = useState(500);
     const [testimonyMessage, setTestimonyMessage] = useState(recommendations[0]["message"]);
     const [testimonyAuthor, setTestimonyAuthor] = useState(recommendations[0]["author"]);
-    const windowWidth = useRef(window.innerWidth)
+    const windowWidth = useRef(window.innerWidth).current
+    const barplotWidth = parseInt(windowWidth*0.95)
 
     const changeData = (data, height, testimony) =>{
         setSelectedData(data);
@@ -70,7 +71,7 @@ const WorkPage = () => {
                     </div>
                 </div>
             </div>
-            <RightColumn width={windowWidth.current>=800?700:330} className='work-right-container' changeData={changeData} data={selectedData} height={height} />
+            <RightColumn width={windowWidth>=800?700:barplotWidth} className='work-right-container' changeData={changeData} data={selectedData} height={height} />
         </SplitScreen>
     );
 }

@@ -84,7 +84,7 @@ export const PersDev = [
 export const ComSkill = [
     {name: 'Python: Flask, Django', value: 95},
     // eslint-disable-next-line
-    {name: "JavaScript: React, Node.js, Mocha", value: 90},
+    {name: "JavaScript: React, Node.js", value: 90},
     {name: 'HTML5', value: 90},
     {name: 'CSS: Bootstrap', value: 85},
     {name: 'Git / Github', value: 70},
