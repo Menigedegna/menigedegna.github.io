@@ -674,6 +674,27 @@
 }
 /* ----------------------------------------------------------------------------------------------------- */
 
+/* PAGE NOT FOUND */
+
+.PageNotFound_photo_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PageNotFound_photo_container-photo{
+  padding: 9rem 0;
+  width: 90%;
+}
+
+@media(min-width: 800px){
+  .PageNotFound_photo_container-photo{
+    padding: 6rem 0;
+    width: 40%;
+  }
+}
+/* ----------------------------------------------------------------------------------------------------- */
+
 /* FOOTER */
 footer{
   font-size: .8rem;
@@ -685,3 +706,4 @@ footer{
   margin-top: auto;
   
 }
+
