@@ -1,6 +1,6 @@
 import { HorLineBar } from "../components/shapes";
 import { AboutMePageContent } from "../components/contents";
-import DocumentPDF from '../Ashenafi_resume_software_developer.pdf';
+import DocumentPDF from '../Ashenafi_resume.pdf';
 import Image1 from "../images/dark-work-profile.png";
 import Image2 from "../images/closing_image.png";
 

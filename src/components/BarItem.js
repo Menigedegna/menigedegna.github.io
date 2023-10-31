@@ -30,7 +30,7 @@ export const BarItem = ( {name, value, barHeight, barWidth, x, y, maxX, quarterX
         width={maxX}
         height={barHeight}
         opacity={0.8}
-        fill='var(--bgcolor)'
+        fill='#124D3D'
         stroke='black'
         strokeWidth={1}
         rx={5}
@@ -43,10 +43,10 @@ export const BarItem = ( {name, value, barHeight, barWidth, x, y, maxX, quarterX
         height={barHeight}
         opacity={1}
         stroke='var(--color-bright-yellow)'
-        fill='var(--color-bright-yellow)'
+        fill='#FDA1AD'
         fillOpacity={0.9}
         strokeWidth={1}
-        rx={1}
+        rx={2}
       />
       <animated.rect
         x={x}
@@ -58,7 +58,7 @@ export const BarItem = ( {name, value, barHeight, barWidth, x, y, maxX, quarterX
         stroke='#69293A'
         strokeWidth={3}
         fillOpacity={1}
-        rx={5}
+        rx={1}
       />
       <animated.text 
         x={x + 10}
@@ -67,8 +67,8 @@ export const BarItem = ( {name, value, barHeight, barWidth, x, y, maxX, quarterX
         alignmentBaseline="central"
         fontFamily='var(--button-font)'
         fontSize='var(--barItem-font-size)'
-        fill='var(--color-yellow)'
-        stroke='var(--color-yellow)'
+        fill='#FDA1AD'
+        stroke='#FDA1AD'
         strokeWidth={0.5}
 
       >

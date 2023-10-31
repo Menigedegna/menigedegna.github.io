@@ -207,6 +207,7 @@
 
 /* image */
 .home-photo-container{
+  background-color: #E87E00;
   grid-area: image;
   height: 15rem;
   justify-self: center;
@@ -313,6 +314,7 @@
   }
   #aboutMe-desc{
     text-align: left;
+    width: 90%;
   }
   .aboutMe-contact-tags{
     font-size: .8rem !important;
@@ -413,7 +415,7 @@
   width: 6rem;
   aspect-ratio: 1/1;
   font-family: var(--button-font);
-  color: white;
+  color: var(--color-yellow);
   font-size: .8rem;
   text-align: center !important;
   background-color: var(--color-dark-purple);
@@ -451,6 +453,10 @@
   height: 100%;
 }
 
+.experience-hat-pic{
+  width: 300px;
+  aspect-ratio: 1/1;
+}
 .experience-column{
   --card-height: 300px;
   --card-width: 330px;
@@ -468,9 +474,14 @@
               2px 4px 8px 0px rgba(0,255,255,0.7),
               2px 4px 16px 0px rgba(0,255,255,0.7); */
   }
+  #column0{ background-color: rgb(88, 24, 151); }
+  #column1{ background-color: #E87E00; }
+  #column2{ background-color: rgb(0, 128, 43); }
+  #column3{ background-color: rgb(128, 0, 100); }
+  #column4{ background-color: rgb(0, 13, 128); }
+  #column5{ background-color: rgb(0, 128, 122); }
 
 .experience-image{
-  /* margin: 1rem; */
   height: calc(var(--card-height) - 20px);
   width: calc(var(--card-width) - 20px);
   opacity: 0.9;
@@ -512,10 +523,13 @@
   padding-bottom: .8rem;
   display: flex;
   gap: .7rem;
+  font-size: .8rem;
 }
 
 .experience-position{
-  background-color: #fd65935e;
+  background-color: #FF914D;
+  /* background-color: #fd65935e; */
+  border-radius: .2rem;
   padding: 1rem;
   /* padding-bottom: .8rem; */
 }
@@ -535,8 +549,10 @@
   text-align: center;
 }
 .experience-button{
-  background-color: rgb(255, 90, 153);
-  color: black;
+  background-color: #9C51A2;
+  /* background-color: rgb(255, 90, 153); */
+  color: white;
+  /* color: black; */
   font-family: var(--nav-button);
   font-weight: 400;
   text-decoration: none;
@@ -557,7 +573,8 @@
   font-family: var('--font-button');
   font-size: 1.2rem;
   font-weight: bold;
-  background-color: var(--color-brik-red);
+  background-color: #FF3131;
+  /* background-color: var(--color-brik-red); */
   padding: .5rem .8rem;
   border-radius: .5rem;
 }
@@ -566,7 +583,7 @@
 }
 
 .experience-column:hover{
-  background-color: white;
+  background-color: #FFDE59;
   border: 2px solid var(--color-yellow);
   border-radius: 1rem;
 }
@@ -577,6 +594,10 @@
 .experience-column:hover .experience-image{
   transition: all .3s;
   opacity: .1;
+  -moz-transition: opacity 0.8s ease-in-out;
+  -webkit-transition: opacity 0.8s ease-in-out;
+  -ms-transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
 }
 .experience-column:hover .experience-image-text{
   transition: all .3s;
@@ -609,6 +630,7 @@
 .getInTouch-contact-info{
   font-family: var(--normal-text-font);
   padding-bottom: 2rem;
+  color: black;
 }
 .getInTouch-tag{
   font-size: 1.2rem;
@@ -619,6 +641,7 @@
   font-weight: bold;
   padding-left: .5rem;
   font-size: 1.5rem;
+  color: #FDA1AD;
 }
 
 .getInTouch-call-icons{
@@ -627,7 +650,11 @@
  align-items: center;
 }
 .decor-icons{
-  color: var(--color-dark-purple);
+  background-color: var(--color-dark-purple);
+  border: solid #14462d 3px;
+  padding: .4rem .6rem;
+  border-radius: 15rem;
+  color: #EC6D5F;
 }
 
 .getInTouch-info{
@@ -658,6 +685,7 @@
 }
 
 .bye-image{
+  background-color: #E87E00;
   width: 330px;
 }
 @media(min-width: 800px){
