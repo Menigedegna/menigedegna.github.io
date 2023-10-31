@@ -207,7 +207,6 @@
 
 /* image */
 .home-photo-container{
-  background-color: #E87E00;
   grid-area: image;
   height: 15rem;
   justify-self: center;
@@ -408,24 +407,36 @@
   padding-top: 3rem;
 }
 
-.work-button{
-  border: 10px dashed var(--color-yellow);
-  border-radius: 10rem;
-  padding: 4px 8px;
-  width: 6rem;
+.work-button, .work-button-active{
+  /* border-radius: 5rem 5rem 4rem 6rem; */
+  border-radius: 5rem 2rem;
+  /* padding: 4px 8px; */
+  width: 2rem;
   aspect-ratio: 1/1;
   font-family: var(--button-font);
-  color: var(--color-yellow);
   font-size: .8rem;
+  font-weight: 600;
   text-align: center !important;
-  background-color: var(--color-dark-purple);
+  background-color: #157e60;
+}
+.work-button{
+  border: 2px outset #0c4736;
+  color: #b1fce7;
+
 }
 
-.work-button:hover {
-  border: 10px solid var(--color-yellow);
+.work-button:hover, .work-button-active{
+  width: 9rem;
+  border: 1px inset rgb(7, 26, 17);
+  box-shadow: 5px 10px 20px rgb(4, 20, 11) inset;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #09382a;
+  color: rgb(1, 8, 5);
 }
 .work-button:active { 
-  transform: translateY(.2rem);
+  box-shadow: 5px 20px 40px rgb(4, 20, 11) inset;
+
  }
 
 

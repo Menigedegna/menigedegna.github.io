@@ -30,9 +30,9 @@ export const BarItem = ( {name, value, barHeight, barWidth, x, y, maxX, quarterX
         width={maxX}
         height={barHeight}
         opacity={0.8}
-        fill='#124D3D'
+        fill='#09382a'
         stroke='black'
-        strokeWidth={1}
+        strokeWidth={2}
         rx={5}
       />
 
@@ -54,7 +54,7 @@ export const BarItem = ( {name, value, barHeight, barWidth, x, y, maxX, quarterX
         width={quarterX}
         height={barHeight}
         opacity={1}
-        fill='var(--color-dark-purple)'
+        fill='#8B223F'
         stroke='#69293A'
         strokeWidth={3}
         fillOpacity={1}

@@ -15,9 +15,10 @@ const RightColumn = ({width, className, changeData, data, height}) =>{
     return(
         <div className={className}>
             <div className="work-skills_icons">
-                <button className="work-button" style={{opacity:data===ComSkill?1:0.7}} onClick={() => changeData(ComSkill, 500, recommendations[0])}>{"Computer Programing"}</button>
-                <button className="work-button" style={{opacity:data===PersDev?1:0.7}} onClick={() => changeData(PersDev, 600, recommendations[1])}>{"Personal Development"}</button>
-                <button className="work-button" style={{opacity:data===LanguageSkill?1:0.7}} onClick={() => changeData(LanguageSkill, 300, recommendations[2])}>{"Language"}</button>
+                {/* <button className="work-button" style={{opacity:data===ComSkill?1:0.7}} onClick={() => changeData(ComSkill, 500, recommendations[0])}>{"Computer Programing"}</button> */}
+                <button className={data===ComSkill?"work-button-active":"work-button"} onClick={() => changeData(ComSkill, 500, recommendations[0])}>{"Computer Programing"}</button>
+                <button className={data===PersDev?"work-button-active":"work-button"} onClick={() => changeData(PersDev, 600, recommendations[1])}>{"Personal Development"}</button>
+                <button className={data===LanguageSkill?"work-button-active":"work-button"} onClick={() => changeData(LanguageSkill, 300, recommendations[2])}>{"Language"}</button>
             </div>
             <Barplot className="worlk-barplot"
                 width={width}

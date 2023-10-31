@@ -1,7 +1,5 @@
 import { SplitScreen } from "../components/SpliScreen";
 import { ContactEmail, ContactTel } from "../components/contents";
-import { HorLineBar } from "../components/shapes";
-import { ContactForm } from "../components/contactForm";
 import Image1 from "../images/dark-bye-work-profile.png";
 import Image2 from "../images/closing_image.png";
 
@@ -31,7 +29,7 @@ const ColumnOne = () => {
                     <i className="fa fa-phone decor-icons" aria-hidden="true"></i>
                     <i className="fa fa-whatsapp decor-icons" aria-hidden="true"></i>
                     <i className="fa fa-telegram decor-icons" aria-hidden="true"></i>
-                    <div className="getIntouch-tag-type">Call / Text</div>
+                    <div className="getIntouch-tag-type">Call / Message</div>
                 </div>
             </ContactInfo>
             <ContactInfo info={ContactEmail}>
