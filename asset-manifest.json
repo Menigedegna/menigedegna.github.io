@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.42afd48c.css",
-    "main.js": "/static/js/main.b0da2e43.js",
+    "main.css": "/static/css/main.21f71f25.css",
+    "main.js": "/static/js/main.d7d986f1.js",
     "static/js/787.eef0f175.chunk.js": "/static/js/787.eef0f175.chunk.js",
     "static/media/dark-bye-work-profile.png": "/static/media/dark-bye-work-profile.e5fc18f5f5230f95f198.png",
     "static/media/404_work-profile.png": "/static/media/404_work-profile.c71991cd10bbc4523a06.png",
@@ -10,17 +10,18 @@
     "static/media/profile_picture.png": "/static/media/profile_picture.3a1340690cff387879cc.png",
     "static/media/closing_image.png": "/static/media/closing_image.896bb0da891bd9ba783b.png",
     "static/media/silver_lining.png": "/static/media/silver_lining.783b76dd0e584b060c42.png",
-    "static/media/Ashenafi_resume_software_developer.pdf": "/static/media/Ashenafi_resume_software_developer.9c64de5990cbd34fb0f3.pdf",
+    "static/media/Ashenafi_resume.pdf": "/static/media/Ashenafi_resume.7a8c18e4ab64ab5e1e9f.pdf",
+    "static/media/hat.png": "/static/media/hat.2bc3ac5fadbffa22a69f.png",
     "static/media/crossing_turtle_screenshot.png": "/static/media/crossing_turtle_screenshot.9f089aea744c818243dc.png",
     "static/media/pong_game_screenshot.png": "/static/media/pong_game_screenshot.76cfd568535fc22f70a1.png",
     "static/media/Snake_game.png": "/static/media/Snake_game.57630ac84769719e837a.png",
     "index.html": "/index.html",
-    "main.42afd48c.css.map": "/static/css/main.42afd48c.css.map",
-    "main.b0da2e43.js.map": "/static/js/main.b0da2e43.js.map",
+    "main.21f71f25.css.map": "/static/css/main.21f71f25.css.map",
+    "main.d7d986f1.js.map": "/static/js/main.d7d986f1.js.map",
     "787.eef0f175.chunk.js.map": "/static/js/787.eef0f175.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.42afd48c.css",
-    "static/js/main.b0da2e43.js"
+    "static/css/main.21f71f25.css",
+    "static/js/main.d7d986f1.js"
   ]
 }
