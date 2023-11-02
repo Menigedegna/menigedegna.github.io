@@ -407,33 +407,31 @@
 }
 
 .work-button, .work-button-active{
-  border-radius: 5rem 2rem;
-  aspect-ratio: 1/1;
+  border-radius: 5rem;
+  padding: 0.8rem 0;
   font-family: var(--button-font);
   font-size: .8rem;
-  font-weight: 600;
   text-align: center !important;
   background-color: #157e60;
+  width: 6rem;
+
 }
 .work-button{
   border: 2px outset #0c4736;
   color: #b1fce7;
-  width: 9rem;
 
 }
 
 .work-button:hover, .work-button-active{
-  width: 9rem;
   border: 1px inset rgb(7, 26, 17);
   box-shadow: 5px 10px 20px rgb(4, 20, 11) inset;
-  font-size: .8rem;
-  font-weight: 600;
   background-color: #09382a;
-  color: rgb(1, 8, 5);
+  color: var(--bgcolor);
+  -webkit-text-stroke: 1px black;
+
 }
 .work-button:active { 
   box-shadow: 5px 20px 40px rgb(4, 20, 11) inset;
-
  }
 
 
@@ -445,13 +443,9 @@
     justify-content: center;
     gap: 3rem;
   }
-  .work-button{
-    font-size: 1.1rem;
-  }
-  .work-button:hover, .work-button-active{
-    font-size: 1.2rem;
-    font-weight: 600;
-
+  .work-button, .work-button-active{
+    width: 9rem;
+    font-size: 1.5rem;
   }
  }
 /* ----------------------------------------------------------------------------------------------------- */

@@ -16,9 +16,15 @@ const RightColumn = ({width, className, changeData, data, height}) =>{
         <div className={className}>
             <div className="work-skills_icons">
                 {/* <button className="work-button" style={{opacity:data===ComSkill?1:0.7}} onClick={() => changeData(ComSkill, 500, recommendations[0])}>{"Computer Programing"}</button> */}
-                <button className={data===ComSkill?"work-button-active":"work-button"} onClick={() => changeData(ComSkill, 500, recommendations[0])}>{"Computer Programing"}</button>
-                <button className={data===PersDev?"work-button-active":"work-button"} onClick={() => changeData(PersDev, 600, recommendations[1])}>{"Personal Development"}</button>
-                <button className={data===LanguageSkill?"work-button-active":"work-button"} onClick={() => changeData(LanguageSkill, 300, recommendations[2])}>{"Language"}</button>
+                <button className={data===ComSkill?"work-button-active":"work-button"} onClick={() => changeData(ComSkill, 500, recommendations[0])}>
+                    <i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
+                </button>
+                <button className={data===PersDev?"work-button-active":"work-button"} onClick={() => changeData(PersDev, 600, recommendations[1])}>
+                    <i class="fa fa-user-o fa-2x" aria-hidden="true"></i>
+                </button>
+                <button className={data===LanguageSkill?"work-button-active":"work-button"} onClick={() => changeData(LanguageSkill, 300, recommendations[2])}>
+                    <i class="fa fa-language fa-2x" aria-hidden="true"></i>
+                </button>
             </div>
             <Barplot className="worlk-barplot"
                 width={width}
