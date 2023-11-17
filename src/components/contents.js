@@ -1,5 +1,5 @@
 const email = "mariamawit.ashenafi2011@gmail.com"
-export const AboutMePageContent = `I am a computational biologist and a developer, passionate about creating impactful and user-friendly applications. <br/>Make sure you have a look at my latest projects.`;
+export const AboutMePageContent = "I am an enthusiastic and skilled <span>computational biologist</span> with a strong background in bioinformatics and biotechnology. Adept at bridging the gap between computation and biology, offering a <span>unique blend of technical expertise</span> and biological insight. Experienced in full-stack development, data analysis, machine learning, data management, and computational biology, with a proven track record of <span>successful projects</span> in academic and industry settings. Proficient in Python, JavaScript, HTML5, CSS, and a range of developer tools. Demonstrated <span>leadership</span> as a team leader and a <span>collaborative</span> approach in multidisciplinary environments. Fluent in Amharic, English, and French, with <span>excellent communication</span> and <span>problem-solving skills</span>. Seeking opportunities to leverage my expertise in bioinformatics, data management, and software development to contribute to innovative projects and drive advancements in computational biology."
 const recommend1 = "Mariamawit showed great work ethic. She is diligent, responsive, organized, responsibile and takes initiatives. She adapted quickly to a new profession and a new enviornment, while demonstrating integrity. She was available to listen to others, she was able to maintain an effective relationship with her students and their parents. Her teamwork and effective communication were appreciated by her colleagues."
 const author1 = 'Jean-Pierre Pasquiou, Headmaster, LGM'
 const recommend2 = "Ms. Ashenafi integrated into the team quickly, and the partners praised her professionalism. During her mission, she has demonstrated rigor and autonomy, this led me to entrust the management of this project to her within few weeks. And I was pleased with the result. I recommend her ability to absorb and implement new knowledge in a short period of time."
@@ -68,7 +68,7 @@ const experience5={
 }
 
 export const experienceArray = [experience1, experience2, experience3, experience4, experience5];
-export const ContactTel = "+251983330001";
+export const ContactTel = "(+251) 98-333-0001";
 export const ContactEmail= email;
 export const PersDev = [
     {name: 'Integrity', value: 95},
