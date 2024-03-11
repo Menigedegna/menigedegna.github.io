@@ -30,10 +30,10 @@ export const BarItem = ( {name, value, barHeight, barWidth, x, y, maxX, quarterX
         width={maxX}
         height={barHeight}
         opacity={0.8}
-        fill='var(--bgcolor)'
+        fill='#09382a'
         stroke='black'
         strokeWidth={2}
-        rx={5}
+        rx={2}
       />
 
       <animated.rect
@@ -42,9 +42,9 @@ export const BarItem = ( {name, value, barHeight, barWidth, x, y, maxX, quarterX
         width={springProps.barWidth}
         height={barHeight}
         opacity={1}
-        stroke='var(--color-bright-yellow)'
-        fill='#8B223F'
-        fillOpacity={0.9}
+        stroke='white'
+        fill='var(--color-yellow)'
+        fillOpacity={1}
         strokeWidth={1}
         rx={2}
       />
@@ -55,7 +55,7 @@ export const BarItem = ( {name, value, barHeight, barWidth, x, y, maxX, quarterX
         height={barHeight}
         opacity={1}
         fill='var(--color-dark-purple)'
-        stroke='white'
+        stroke='black'
         strokeWidth={1}
         fillOpacity={1}
         rx={1}

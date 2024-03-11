@@ -4,7 +4,7 @@ import Image2 from "../images/XTSpotIntensity_snapshot.png";
 import Image3 from "../images/crossing_turtle_screenshot.png";
 import Image4 from "../images/pong_game_screenshot.png";
 import Image5 from "../images/Snake_game.png";
-import HatImage from '../images/hat.png';
+import HatImage from '../images/bee.png';
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { HorLineBar } from "../components/shapes";
@@ -43,10 +43,11 @@ const ExperiencePage = () => {
                 />       
             </div>
             {experienceArray.map((item, id) => (
-            <div className="experience-column" id={`column${id}`}>
-                <GalleryLoader 
-                    image={IMAGE_ARRAY[id]}
-                    arr={item}/>         
+            <div class="hexagon-container">
+                <div class="hexagon-frame"></div>
+                    <GalleryLoader 
+                        image={IMAGE_ARRAY[id]}
+                        arr={item}/>         
             </div>
             ))}
         </div>

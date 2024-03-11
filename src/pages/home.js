@@ -38,7 +38,7 @@ const HomePage = () => {
             <LazyLoadImage src={Image1} className="home-photo-container" alt="Profile picture"/>
             {/* CLOSING IMAGE */}
             <div className="closing-image-container">
-                <LazyLoadImage src={Image2} className="closing-photo" alt="Flower picture"/>
+                <LazyLoadImage src={Image2} className="closing-photo" alt="bee with flower"/>
             </div>
         </div>
 
