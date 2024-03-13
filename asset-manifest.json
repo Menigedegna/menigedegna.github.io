@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.b7a6ad23.css",
-    "main.js": "/static/js/main.af90ca09.js",
+    "main.css": "/static/css/main.fe65d2da.css",
+    "main.js": "/static/js/main.55476fe2.js",
     "static/js/787.eef0f175.chunk.js": "/static/js/787.eef0f175.chunk.js",
+    "static/media/dark-bye-work-profile.png": "/static/media/dark-bye-work-profile.f87ec588b55e8485eac5.png",
+    "static/media/dark-work-profile.png": "/static/media/dark-work-profile.2e7c365afedd3f669e66.png",
     "static/media/404_work-profile.png": "/static/media/404_work-profile.c71991cd10bbc4523a06.png",
-    "static/media/closing_image.png": "/static/media/closing_image.b4e36f109dd97fac49c2.png",
-    "static/media/dark-work-profile.png": "/static/media/dark-work-profile.1364391192bb4860aed9.png",
     "static/media/XTSpotIntensity_snapshot.png": "/static/media/XTSpotIntensity_snapshot.8b972409933346197ba8.png",
-    "static/media/profile_picture.png": "/static/media/profile_picture.3a1340690cff387879cc.png",
+    "static/media/profile_picture.png": "/static/media/profile_picture.5b2c80de9ccab0750e78.png",
     "static/media/bee.png": "/static/media/bee.d282ff105f28abe817ad.png",
     "static/media/Ashenafi_resume.pdf": "/static/media/Ashenafi_resume.0ba7e2d0cb583e029bc9.pdf",
-    "static/media/dark-bye-work-profile.png": "/static/media/dark-bye-work-profile.99bd210002e12dbdc39e.png",
     "static/media/silver_lining.png": "/static/media/silver_lining.783b76dd0e584b060c42.png",
-    "static/media/hexagon_frame_up.png": "/static/media/hexagon_frame_up.b1e3e10320b44ceff74f.png",
-    "static/media/hexagon_frame.png": "/static/media/hexagon_frame.de753e75dfa5d3863532.png",
+    "static/media/Song_Viewer.png": "/static/media/Song_Viewer.404fb027b30232eed8c7.png",
+    "static/media/hexagon_frame_up.png": "/static/media/hexagon_frame_up.98ff3105e65625da7d38.png",
+    "static/media/hexagon_frame.png": "/static/media/hexagon_frame.f3eedbb34f7628c4740e.png",
     "static/media/crossing_turtle_screenshot.png": "/static/media/crossing_turtle_screenshot.9f089aea744c818243dc.png",
     "static/media/pong_game_screenshot.png": "/static/media/pong_game_screenshot.76cfd568535fc22f70a1.png",
     "static/media/Snake_game.png": "/static/media/Snake_game.57630ac84769719e837a.png",
     "index.html": "/index.html",
-    "main.b7a6ad23.css.map": "/static/css/main.b7a6ad23.css.map",
-    "main.af90ca09.js.map": "/static/js/main.af90ca09.js.map",
+    "main.fe65d2da.css.map": "/static/css/main.fe65d2da.css.map",
+    "main.55476fe2.js.map": "/static/js/main.55476fe2.js.map",
     "787.eef0f175.chunk.js.map": "/static/js/787.eef0f175.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7a6ad23.css",
-    "static/js/main.af90ca09.js"
+    "static/css/main.fe65d2da.css",
+    "static/js/main.55476fe2.js"
   ]
 }
