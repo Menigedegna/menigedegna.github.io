@@ -7,7 +7,7 @@ import Image1 from "../images/profile_picture.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
-const BUTTONS_HEIGHT = 50;
+const BUTTONS_HEIGHT = 80;
 const IMAGE_WIDTH = 300;
 const IMAGE_HEIGHT = 420;
 
@@ -78,7 +78,7 @@ const WorkPage = () => {
                     </div>
                 </div>
             </div>
-            <RightColumn width={windowWidth>=800?700:barplotWidth} className='work-right-container' changeData={changeData} data={selectedData} height={height} />
+            <RightColumn width={windowWidth>=800?600:barplotWidth} className='work-right-container' changeData={changeData} data={selectedData} height={height} />
         </SplitScreen>
     );
 }

@@ -1,4 +1,5 @@
 import { experienceArray } from "../components/contents";
+import Image0 from "../images/Song_Viewer.png";
 import Image1 from "../images/silver_lining.png";
 import Image2 from "../images/XTSpotIntensity_snapshot.png";
 import Image3 from "../images/crossing_turtle_screenshot.png";
@@ -9,7 +10,7 @@ import HatImage from '../images/bee.png';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { HorLineBar } from "../components/shapes";
 
-const IMAGE_ARRAY = [Image1, Image2, Image3, Image4, Image5]
+const IMAGE_ARRAY = [Image0, Image1, Image2, Image3, Image4, Image5]
 
 const GalleryLoader = ({image, id, arr}) =>{
     return(
@@ -20,7 +21,7 @@ const GalleryLoader = ({image, id, arr}) =>{
             <div className="experience-ShowMe">{">  Show Me  <"}</div>
             <div className="experience-image-text">
                 <div className="experience-position">{arr.position}</div>
-                <HorLineBar id="experience-horLine"/>
+                {/* <HorLineBar id="experience-horLine"/> */}
                 <div className="experience-skill-container">
                     {arr.skills.map((item, key) => <div key={item.id} className="experience-code-tag">{item}</div>)}
                 </div>
@@ -37,11 +38,11 @@ const GalleryLoader = ({image, id, arr}) =>{
 const ExperiencePage = () => {
     return (
         <div className='margined-page wrapped-page experienc-main-container'>
-            <div className='experience-hat-container'>
+            {/* <div className='experience-hat-container'>
                 <LazyLoadImage src={HatImage} className="experience-hat-pic"
                     alt="hat picture"
                 />       
-            </div>
+            </div> */}
             {experienceArray.map((item, id) => (
             <div class="hexagon-container">
                 <div class="hexagon-frame"></div>

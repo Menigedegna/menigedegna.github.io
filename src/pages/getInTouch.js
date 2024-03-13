@@ -63,7 +63,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ContactPage = () => {
     return (
-        <div className='margined-page wrapped-page work-main-container'>
+        <div className='margined-page wrapped-page work-main-container' id="getInTouch-center-container">
             <LazyLoadImage src={Image1} className="business-card-image"
                 alt="business card"
             />       

@@ -30,10 +30,10 @@ export const BarItem = ( {name, value, barHeight, barWidth, x, y, maxX, quarterX
         width={maxX}
         height={barHeight}
         opacity={0.8}
-        fill='#09382a'
-        stroke='black'
-        strokeWidth={2}
-        rx={2}
+        fill='hsla(44, 80%, 5%, 1)'
+        stroke='hsla(44, 65%, 5%, 1)'
+        strokeWidth={0}
+        rx={10}
       />
 
       <animated.rect
@@ -42,11 +42,11 @@ export const BarItem = ( {name, value, barHeight, barWidth, x, y, maxX, quarterX
         width={springProps.barWidth}
         height={barHeight}
         opacity={1}
-        stroke='white'
-        fill='var(--color-yellow)'
+        fill='hsla(284, 85%, 35%, 1)'
+        stroke='hsla(284, 70%, 15%, 1)'
         fillOpacity={1}
-        strokeWidth={1}
-        rx={2}
+        strokeWidth={0}
+        rx={10}
       />
       <animated.rect
         x={x}
@@ -54,23 +54,22 @@ export const BarItem = ( {name, value, barHeight, barWidth, x, y, maxX, quarterX
         width={quarterX}
         height={barHeight}
         opacity={1}
-        fill='var(--color-dark-purple)'
-        stroke='black'
-        strokeWidth={1}
+        stroke='hsla(44, 75%, 5%, 1)'
+        fill='hsla(44, 100%, 55%, 1)'
+        strokeWidth={0}
         fillOpacity={1}
-        rx={1}
+        rx={5}
       />
       <animated.text 
         x={x + 10}
-        y={springProps.y?.to((y) => y + barHeight / 2)}
+        y={springProps.y?.to((y) => y+2 + barHeight / 2)}
         textAnchor="start"
         alignmentBaseline="central"
         fontFamily='var(--button-font)'
         fontSize='var(--barItem-font-size)'
-        fill='#FDA1AD'
-        stroke='#FDA1AD'
+        fill='hsla(284, 100%, 5%, 1)'
+        stroke='hsla(284, 100%, 2%, 1)'
         strokeWidth={0.5}
-
       >
         {name}
       </animated.text>

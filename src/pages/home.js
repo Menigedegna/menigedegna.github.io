@@ -1,8 +1,7 @@
-import { HorLineBar } from "../components/shapes";
-import { AboutMePageContent } from "../components/contents";
+// import { HorLineBar } from "../components/shapes";
+import { AboutMeList } from "../components/contents";
 import DocumentPDF from '../Ashenafi_resume.pdf';
 import Image1 from "../images/dark-work-profile.png";
-import Image2 from "../images/closing_image.png";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -12,33 +11,42 @@ const HomePage = () => {
         <div className='margined-page home-page'>
             {/* GREETING AND HORIZONTAL LINE */}
             <div className="aboutMe-greeting-container">
-                <div className="aboutMe-greeting">Hi, I am</div>
-                <HorLineBar />
+                <div className="aboutMe-greeting">I am</div>
+                {/*<HorLineBar />*/}
             </div>
             {/* NAME, PROFILE DESCRIPTION AND LINKS: RESUME AND SOCIAL MEDIA*/}
             <div className="aboutMe-profile_desc">
-                <div className="aboutMe-author"><span style={{color:'white'}}>Mariamawit</span> Ashenafi</div>
-                <div className="normal_text" id="aboutMe-desc"  dangerouslySetInnerHTML= {{ __html : AboutMePageContent }}/>
+                <div className="aboutMe-author"><span className="firstName">Mariamawit</span> Ashenafi</div>
+                <div id="aboutMe-desc" >
+                    {AboutMeList.map((item, ind) => (
+                        <div className="aboutMe-par" id={"aboutMe-num-"+ind}>
+                            {ind<3 && <div className="aboutMe-num" >0{ind+1}</div>}
+                            <div className={ind<3?"aboutMe-text":"aboutMe-goal"}  dangerouslySetInnerHTML= {{ __html : item }}/>
+                        </div>                   
+                    ))}
+                </div>
                 <div className="aboutMe-contact-container">      
+                <div className="submit-button" >
                     <a
+                    id="aboutMe-resume"
                     href={DocumentPDF}
                     download="Resume_Ashenafi"
                     target="_blank"
                     rel="noreferrer"
-                    >
-                        <button className="submit-button" id="aboutMe-resume">Resume</button>
+                    >Resume
                     </a>
-                    <div className='aboutMe-tag-container'>
-                        <a className="aboutMe-contact-tags submit-button" href="https://www.linkedin.com/in/mariamawit-ashenafi/" target="_blank" rel="noreferrer"><i className="fa fa-linkedin-square fa-3x" aria-hidden="true"></i> </a>
-                        <a className="aboutMe-contact-tags submit-button" href="https://github.com/Menigedegna/" target="_blank" rel="noreferrer"><i className="fa fa-github fa-3x" aria-hidden="true"></i> </a>
-                    </div>
+                </div>
+                        <div className="submit-button">
+                            <a className="aboutMe-contact-tags" href="https://www.linkedin.com/in/mariamawit-ashenafi/" target="_blank" rel="noreferrer"><i className="fa fa-linkedin-square fa-3x" aria-hidden="true"></i> </a>
+                        </div>
+                        <div className="submit-button">
+                            <a className="aboutMe-contact-tags" href="https://github.com/Menigedegna/" target="_blank" rel="noreferrer"><i className="fa fa-github fa-3x" aria-hidden="true"></i> </a>
+                        </div>
                 </div>
             </div>
             {/* PROFILE IMAGE */}
-            <LazyLoadImage src={Image1} className="home-photo-container" alt="Profile picture"/>
-            {/* CLOSING IMAGE */}
-            <div className="closing-image-container">
-                <LazyLoadImage src={Image2} className="closing-photo" alt="bee with flower"/>
+            <div className="profile-image-container">
+                <LazyLoadImage src={Image1} className="home-photo-container" alt="Profile picture"/>
             </div>
         </div>
 
