@@ -26,22 +26,20 @@ const experience0={
     skills: ['HTML5', 'CSS', 'React.js', 'Express.js', 'TypeScript', 'MongoDB', 'Docker'],
     company: '',
     date: '2024',
-    description: 'Web application : for song managment',
+    description: 'Web application : for the managment of songs. <br/><a class="projecLink" href="https://github.com/Menigedegna/SongViewer" target="_blank" rel="noreferrer">Front End Code</a> ; <a class="projecLink" href="https://github.com/Menigedegna/SongsServer" target="_blank" rel="noreferrer">Back End Code</a>',
     exLink: 'https://songviewer.netlify.app/',
-    ghFront: 'https://github.com/Menigedegna/SongViewer',
-    ghBck: 'https://github.com/Menigedegna/SongsServer'
 }
 const experience1={
-    position: 'Full-Stack Developer',
-    skills: ['HTML5', 'CSS', 'PYTHON'],
-    company: 'Silver Lining',
+    position: 'Coding Challenge',
+    skills: ['HTML5', 'CSS', 'React.js','Django'],
+    company: '',
     date: '2023',
-    description: 'Web application : official website for a startup',
+    description: 'Web application : for the management of soccer players. <br/><a class="projecLink" href="https://github.com/Menigedegna/Football_Players" target="_blank" rel="noreferrer">Front End Code</a> ; <a class="projecLink" href="https://github.com/Menigedegna/Football_Players_Backend" target="_blank" rel="noreferrer">Back End Code</a>',
     exLink: 'https://silverliningserv.com/'
 
 }
 const experience2={
-    position: 'Computational Biologist',
+    position: 'Research Project',
     skills: ['PYTHON'],
     company: 'University of Zurich',
     date: '2014-18',

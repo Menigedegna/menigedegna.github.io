@@ -738,6 +738,10 @@
   /* border: 2px solid var(--color-yellow); */
   border-radius: 1rem;
 }
+.projecLink{
+  color: pink;
+
+}
 @media(min-width: 800px){
   .hexagon-container {
     margin-left: 1em;

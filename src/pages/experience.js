@@ -27,7 +27,7 @@ const GalleryLoader = ({image, id, arr}) =>{
                 </div>
                 <div className="experience-company">{arr.company}</div>
                 <div className="experience-date">({arr.date})</div>
-                <div className="experience-desc">{arr.description}</div>
+                <div className="experience-desc" dangerouslySetInnerHTML= {{ __html : arr.description }}/>
                 <a className="experience-button" href={arr.exLink} target="_blank" rel="noreferrer">View</a>
             </div>
         </div>   
