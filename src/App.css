@@ -275,7 +275,7 @@
 .aboutMe-contact-tags{
   font-size: .5rem !important;
   color: var(--bgcolor);
-  padding-top: .3rem;
+  padding: .3rem 25px !important;
 }
 
 .aboutMe-profile_desc{

@@ -35,7 +35,7 @@ const experience1={
     company: '',
     date: '2023',
     description: 'Web application : for the management of soccer players. <br/><a class="projecLink" href="https://github.com/Menigedegna/Football_Players" target="_blank" rel="noreferrer">Front End Code</a> ; <a class="projecLink" href="https://github.com/Menigedegna/Football_Players_Backend" target="_blank" rel="noreferrer">Back End Code</a>',
-    exLink: 'https://silverliningserv.com/'
+    exLink: 'https://menigedegna.github.io/Football_Players/'
 
 }
 const experience2={

@@ -26,8 +26,9 @@ const HomePage = () => {
                     ))}
                 </div>
                 <div className="aboutMe-contact-container">      
-                <div className="submit-button" >
+                {/* <div className="submit-button" > */}
                     <a
+                    className="aboutMe-contact-tags submit-button"
                     id="aboutMe-resume"
                     href={DocumentPDF}
                     download="Resume_Ashenafi"
@@ -35,13 +36,13 @@ const HomePage = () => {
                     rel="noreferrer"
                     >Resume
                     </a>
-                </div>
-                        <div className="submit-button">
-                            <a className="aboutMe-contact-tags" href="https://www.linkedin.com/in/mariamawit-ashenafi/" target="_blank" rel="noreferrer"><i className="fa fa-linkedin-square fa-3x" aria-hidden="true"></i> </a>
-                        </div>
-                        <div className="submit-button">
-                            <a className="aboutMe-contact-tags" href="https://github.com/Menigedegna/" target="_blank" rel="noreferrer"><i className="fa fa-github fa-3x" aria-hidden="true"></i> </a>
-                        </div>
+                {/* </div> */}
+                    <a className="aboutMe-contact-tags submit-button" href="https://www.linkedin.com/in/mariamawit-ashenafi/" target="_blank" rel="noreferrer">
+                        <i className="fa fa-linkedin-square fa-3x" aria-hidden="true"></i> 
+                    </a>
+                    <a className="aboutMe-contact-tags submit-button" href="https://github.com/Menigedegna/" target="_blank" rel="noreferrer">
+                        <i className="fa fa-github fa-3x" aria-hidden="true"></i> 
+                    </a>
                 </div>
             </div>
             {/* PROFILE IMAGE */}
