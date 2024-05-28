@@ -869,9 +869,9 @@
     padding: 1.5rem;
   }  
   .business-card-image{
-    height: 45vh;
+    height: 55vh;
     width: auto;
-    margin: 15vh 0;
+    margin: 10vh 0;
   }
 }
 
@@ -888,14 +888,20 @@
 }
 
 .PageNotFound_photo_container-photo{
-  padding: 30% 0;
+  /* padding: 30% 0; */
+  margin: 2rem 0;
   width: 90%;
+  border: 1px solid white;
+  border-radius: 2rem;
 }
 
 @media(min-width: 800px){
   .PageNotFound_photo_container-photo{
-    padding: 6rem 0;
-    width: 40%;
+    /* padding: 6rem 0; */
+    /* width: 40%; */
+    height: 75vh;
+    width: auto;
+    margin: 5vh 0;
   }
 }
 /* ----------------------------------------------------------------------------------------------------- */
