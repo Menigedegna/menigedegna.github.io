@@ -8,7 +8,7 @@ import Image5 from "../images/Snake_game.png";
 // import HatImage from '../images/bee.png';
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { HorLineBar } from "../components/shapes";
+// import { HorLineBar } from "../components/shapes";
 
 const IMAGE_ARRAY = [Image0, Image1, Image2, Image3, Image4, Image5]
 
