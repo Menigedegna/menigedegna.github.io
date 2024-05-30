@@ -161,54 +161,133 @@
 
 /* HOME PAGE */
 
-/* greetings */
-.aboutMe-greeting{
-  flex: 40%;
-  display: flex;
-  flex-direction: column;
-  font-family: var(--button-font);
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: hsla(44, 100%, 75%, .5)
-}
+/* GREETING */
 
 .aboutMe-greeting-container{
-  grid-area: greeting;
   display: flex;
+  flex-direction: column;
   align-items: center;
   width: 100%;
   text-align: center;
+  gap: 2.5rem;
 
 }
+
 .profile-image-container{
-  grid-area: image;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0;
 }
 /* image */
 .home-photo-container{
-  width: 98%;
+  height: 98%;
   border: 1px solid white;
 }
 
+.aboutMe-header{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
 
-/* description */
+.aboutMe-greeting{
+  /* flex: 40%;
+  display: flex;
+  flex-direction: column; */
+  width: 100%;
+  font-size: 2rem!important;
+  font-family: var(--button-font);
+  font-weight: 400;
+  color: hsla(44, 100%, 75%, .5)
+}
 
 .firstName{
-  color: hsla(44, 100%, 85%, 1);
+  color: hsla(44, 100%, 50%, 1);
 
 }
 .aboutMe-author{
-  grid-area: title;
+  width: 100%;
   font-family: var(--nav-font);
   font-weight: 400;
   font-size: 2.5rem;
   letter-spacing: 6px;
-  text-align: center;
+  /* text-align: center; */
   color: hsla(44, 100%, 5%, 1)
 }
+
+/* DESCRIPTION */
+
+.aboutMe-par{
+  display: flex;
+  font-family: var(--par-text);
+  font-weight: 400;
+  /* padding: .5rem 1rem; */
+  /* border-radius: .5rem;
+  border-width: 1px 3px 6px 3px;
+  border-color: var(--bgcolor);
+  border-style: solid; */
+  color: hsla(44, 100%, 85%, 1);
+}
+
+.aboutMe-num{
+  font-size: 3rem;
+  flex-basis: 60px;
+	flex-grow: 0;
+	flex-shrink: 0;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 20%; */
+  height: 100%;
+  color: hsla(44, 100%, 45%, 1);
+  border-right: 1px solid var(--bgcolor);
+}
+#aboutMe-num-0{
+  /* background-color: hsla(164, 100%, 55%, 1); */
+  background-color: hsla(44, 65%, 25%, .5);
+}
+#aboutMe-num-1{
+  /* background-color: hsla(44, 100%, 55%, 1); */
+  background-color: hsla(44, 85%, 45%, .5);
+}
+#aboutMe-num-2{
+  /* background-color: hsla(284, 100%, 55%, 1); */
+  background-color: hsla(44, 100%, 15%, .5);
+
+}
+#aboutMe-num-3{
+  border: 0;
+  color: hsla(44, 100%, 75%, 1);
+  padding: .5rem .5rem;
+}
+.aboutMe-text, .aboutMe-goal{
+  font-size: 20px;
+  text-align: justify;
+}
+/* .aboutMe-text{
+  border-bottom: 1px solid white;
+} */
+.aboutMe-goal{
+  padding-top: 1rem;
+  border-top: 1px solid black;
+}
+
+#aboutMe-desc{
+  grid-area: about;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+
+}
+#aboutMe-desc > span{
+  font-weight: 600;
+}
+
+/* CONTACT INFO */
 
 .submit-button{
   min-width: 3rem;
@@ -242,16 +321,6 @@
   transform: translate(2px, 2px);
  }
 
-#aboutMe-desc{
-  grid-area: about;
-  text-align: justify;
-  display: flex;
-  flex-direction: column;
-  gap: .8rem;
-}
-#aboutMe-desc > span{
-  font-weight: 600;
-}
 
 .aboutMe-contact-container{
   padding-top: 2rem;
@@ -309,7 +378,7 @@
 
 
 /* home page display */
-.home-page{
+/* .home-page{
   display: grid;
   grid-template-areas: 
   "image"
@@ -317,65 +386,22 @@
   "desc"
   "flower"
   ;
-}
-.aboutMe-par{
-  display: flex;
-  font-family: var(--par-text);
-  font-weight: 400;
-  gap: 1rem;
-  padding: .5rem 1rem;
-  border-radius: .5rem;
-  border-width: 1px 3px 6px 3px;
-  border-color: var(--bgcolor);
-  border-style: solid;
-  color: hsla(44, 100%, 85%, 1);
-}
-
-.aboutMe-num{
-  font-size: 3rem;
-  flex-basis: 60px;
-	flex-grow: 0;
-	flex-shrink: 0;
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* border-radius: 20%; */
-  height: 100%;
-  color: hsla(44, 100%, 45%, 1);
-  border-right: 1px solid var(--bgcolor);
-}
-#aboutMe-num-0{
-  /* background-color: hsla(164, 100%, 55%, 1); */
-  background-color: hsla(44, 65%, 25%, .5);
-}
-#aboutMe-num-1{
-  /* background-color: hsla(44, 100%, 55%, 1); */
-  background-color: hsla(44, 85%, 45%, .5);
-}
-#aboutMe-num-2{
-  /* background-color: hsla(284, 100%, 55%, 1); */
-  background-color: hsla(44, 100%, 15%, .5);
-
-}
-#aboutMe-num-3{
-  border: 0;
-  color: hsla(44, 100%, 75%, 1);
-  padding: .5rem .5rem;
-}
-.aboutMe-text, .aboutMe-goal{
-  font-size: 18px;
-  text-align: justify;
-}
-/* .aboutMe-text{
-  border-bottom: 1px solid white;
 } */
-.aboutMe-goal{
-  padding-top: .5rem;
+.home-page{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem .5rem;
 }
+
+
 @media(min-width: 1000px){
+  .aboutMe-greeting-container{
+    flex-direction: row;
+  }
+  .aboutMe-header{
+    text-align: left;
+  }
+
   .aboutMe-author{
     font-weight: 600;
     font-size: 3.5rem;
@@ -387,7 +413,7 @@
   .aboutMe-profile_desc{
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: .2rem;
     align-items: flex-start;
     width: 100%;
   }
@@ -410,11 +436,9 @@
     padding: 0;
     width: 98%;
   }
-  .aboutMe-greeting{
-    font-size: 2rem!important;
-  }
+
   .home-page{
-    grid-template-areas: 
+    /* grid-template-areas: 
     "image greeting" 
     "image desc"
     "flower flower"
@@ -423,7 +447,8 @@
     grid-column-gap: 3rem;
     margin-top: 3rem;
     margin-left: 3rem;
-    margin-right: 5rem;
+    margin-right: 5rem; */
+    padding: 1rem 6rem;
   }
 }
 /* ----------------------------------------------------------------------------------------------------- */
@@ -469,7 +494,7 @@
 }
 .quote-icons{
   font-size: 1.5rem;
-  color: hsla(44, 100%, 50%, 1)
+  color: hsla(44, 100%, 50%, 1);
 }
 #quote-left{
   padding-right: 1rem;
