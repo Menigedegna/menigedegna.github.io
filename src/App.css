@@ -788,19 +788,23 @@
 /* GET IN TOUCH PAGE */
 
 #getInTouch-center-container{
-  padding: 25vh 1rem;
+  /* padding: 25vh 1rem; */
   display: flex;
+  flex-direction: column;
+  height: 100%;
   justify-content: center;
   align-items: center;
+  /* gap: 5rem; */
+  height: 80vh;     
+
 
 }
 
 .getInTouch-column{
-
   display: flex;
   flex-direction: column;
   font-family: var(--normal-text-font);
-  padding-bottom: 2rem;
+  /* padding-bottom: 2rem; */
   align-items: center;
 }
 
@@ -813,21 +817,28 @@
 }
 
 .getInTouch-contact-info{
+  display: flex;
+  gap: 2rem;
   font-family: var(--normal-text-font);
-  padding-bottom: 2rem;
   color: black;
+  width: 100%;
 }
 .getInTouch-tag{
   font-size: 1.2rem;
-  padding-bottom: 1.5rem;
+  /* padding-bottom: 1.5rem; */
+  width: 3rem;
+  display: flex;
+  justify-content:flex-end;
+
 }
 
 .getIntouch-tag-type{
   font-family: var(--button-font);
   font-weight: bold;
   padding-left: .5rem;
-  font-size: 1.5rem;
-  color: #FDA1AD;
+  font-size: 1rem;
+  color: hsla(284, 85%, 45%, 1); 
+  width: 100%;
 }
 
 .getInTouch-call-icons{
@@ -836,15 +847,16 @@
  align-items: center;
 }
 .decor-icons{
-  background-color: var(--color-dark-purple);
-  border: solid #EC6D5F 3px;
-  padding: .4rem .6rem;
+  background-color: var(--bg-color);
+  /* border: solid var(--color-shadow) 3px; */
+  /* padding: .4rem .6rem; */
   border-radius: 15rem;
-  color: #EC6D5F;
+  color: hsla(284, 100%, 55%, 1);
 }
-
 .getInTouch-info{
-  font-size: 1.2rem;
+  padding-top: .5rem;
+  font-size: 1rem;
+  color: hsla(44, 100%, 85%, 1);
 }
 
 #column-right{
@@ -874,9 +886,24 @@
   background-color: #E87E00;
   width: 330px;
 }
+td{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.getIntouchAction{
+  font-family: var(--nav-font);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: hsla(44, 100%, 55%, 1);
+  width: 100%;
+  text-align: left;
+  padding-bottom: 1rem;
+}
 .business-card-image{
-  width: 95vw;
-  border: 1px solid white;
+  height: 5em;
+  padding-bottom: 8rem;
+  /* border: 1px solid white; */
 }
 @media(min-width: 800px){
   .getInTouch-column{
@@ -894,14 +921,20 @@
   #column-right{
     height: 90vh;
   }
-  #getInTouch-center-container{
-    padding: 1.5rem;
-  }  
+
   .business-card-image{
-    height: 55vh;
+    height: 7em;
     width: auto;
-    margin: 10vh 0;
   }
+  .getIntouchAction{
+    width: 15rem;
+    text-align: right;
+  }
+  .getInTouch-tag{
+    font-size: 1.2rem;
+    width: 15rem;
+  }
+
 }
 
 

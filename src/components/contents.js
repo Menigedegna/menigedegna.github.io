@@ -87,6 +87,8 @@ const experience5={
 export const experienceArray = [experience0, experience1, experience2, experience3, experience4, experience5];
 export const ContactTel = "(+251) 98-333-0001";
 export const ContactEmail= email;
+export const ContactLinkedin="https://www.linkedin.com/in/mariamawit-ashenafi/";
+export const ContactGit="https://github.com/Menigedegna/";
 export const PersDev = [
     {name: 'Integrity', value: 95},
     {name: 'Work ethic', value: 90},

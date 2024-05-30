@@ -1,6 +1,8 @@
 // import { HorLineBar } from "../components/shapes";
 import { AboutMeList } from "../components/contents";
 import DocumentPDF from '../Ashenafi_resume.pdf';
+import { ContactLinkedin, ContactGit } from "../components/contents";
+
 // import Image1 from "../images/dark-work-profile.png";
 import Image1 from "../images/profile.jpeg";
 
@@ -55,10 +57,10 @@ const HomePage = () => {
                     >Resume
                     </a>
                 {/* </div> */}
-                    <a className="aboutMe-contact-tags submit-button" href="https://www.linkedin.com/in/mariamawit-ashenafi/" target="_blank" rel="noreferrer">
+                    <a className="aboutMe-contact-tags submit-button" href={ContactLinkedin} target="_blank" rel="noreferrer">
                         <i className="fa fa-linkedin-square fa-3x" aria-hidden="true"></i> 
                     </a>
-                    <a className="aboutMe-contact-tags submit-button" href="https://github.com/Menigedegna/" target="_blank" rel="noreferrer">
+                    <a className="aboutMe-contact-tags submit-button" href={ContactGit} target="_blank" rel="noreferrer">
                         <i className="fa fa-github fa-3x" aria-hidden="true"></i> 
                     </a>
                 </div>
