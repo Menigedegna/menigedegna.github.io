@@ -228,6 +228,7 @@
   border-color: var(--bgcolor);
   border-style: solid; */
   color: hsla(44, 100%, 85%, 1);
+  padding: 1rem 0;
 }
 
 .aboutMe-num{
@@ -420,6 +421,9 @@
   .aboutMe-contact-container{
     gap: 6rem;
     justify-content: center;
+  }
+  .aboutMe-par{
+    padding: 2rem 0;
   }
   #aboutMe-desc{
     width: 100%;
