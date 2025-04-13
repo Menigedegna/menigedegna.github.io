@@ -40,7 +40,12 @@ const HomePage = () => {
                 </div> */}
                 <div className="aboutMe-par" id={"aboutMe-desc"}>
                     {AboutMeList.map((item, ind) => (
-                            <p className={ind<5?"aboutMe-text":"aboutMe-goal"}>{item}</p>
+                            <p className={ind<AboutMeList.length-1?"aboutMe-text":"aboutMe-goal"} id={item==="What I Bring:"?"aboutMe-text-id1":item==="Let’s work together if you need:"?"aboutMe-text-id2":"noid"}>{
+                                item.constructor === Array
+                                ?<ul>{item.map((point) => <li>{point}</li>)}</ul>
+                                :item
+                                }
+                                </p>
                     ))}
                 </div>
 

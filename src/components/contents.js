@@ -1,12 +1,33 @@
 const email = "mariamawit.ashenafi2011@gmail.com"
 // export const AboutMeList = ["An enthusiastic and skilled <span>computational biologist</span> with a strong background in bioinformatics and biotechnology. Adept at bridging the gap between computation and biology, offering a <span>unique blend of technical expertise</span> and biological insight.", "Experienced in full-stack development, data analysis, machine learning, data management, and computational biology, with a proven track record of <span>successful projects</span> in academic and industry settings. Proficient in Python, JavaScript, HTML5, CSS, and a range of developer tools.","Demonstrated <span>leadership</span> as a team leader and a <span>collaborative</span> approach in multidisciplinary environments. Fluent in Amharic, English, and French, with <span>excellent communication</span> and <span>problem-solving skills</span>.", "Seeking opportunities to leverage my expertise in bioinformatics, data management, and software development to contribute to innovative projects and drive advancements in computational biology."]
 export const AboutMeList = [
-    "I am a dedicated Bioinformatics Software Engineer with over seven years of experience at the intersection of biology, data science, and software development. My journey in the world of bioinformatics has been fueled by a passion for uncovering the intricate mechanisms of life through advanced statistical methodologies and innovative computational tools.",
-    "With a strong foundation in programming languages such as Python, JavaScript and R, coupled with extensive experience in developing and implementing bioinformatics pipelines, I have contributed to research in various capacities. My expertise spans the analysis of large-scale multi-omics data, the development of sophisticated bioinformatics tools, and the execution of complex data analysis tasks. I am committed to translating complex biological data into actionable insights.", 
-    "Throughout my career, I have thrived in collaborative environments, leading teams and projects that push the boundaries of our understanding of biological systems. My roles have taken me from the Ethiopian Biotechnology Institute to the University of Zurich, where I have developed a keen ability to adapt quickly, communicate effectively, and deliver results that advance scientific discovery.",
-    "In this portfolio, you will find a showcase of my projects, skills, and achievements. From developing full-stack applications to contributing to large-scale research initiatives, each project highlights my dedication to excellence and innovation. I invite you to explore my work and see how my expertise can bring value to your projects and research endeavors.",
-    "Thank you for visiting, and I look forward to connecting with you!",
-    "Feel free to explore the sections on my portfolio to learn more about my projects, skills, and professional journey. Let's push the boundaries of science and technology together!"
+    "I build tools that turn complex biological data into actionable insights. Combining my research background and full-stack skills (Python, Flask, JavaScript), I thrive where science meets code.",
+    "What I Bring:",
+    "🔬 Bioinformatics & Data Pipelines",
+    [
+        "Designed custom analysis tools for spatial omics data (Python/R) at University of Zurich*.",
+        "Led a bioinformatics team at Ethiopian Biotech Institute, streamlining workflows with Trello/Slack."
+    ],
+    "💻 Web Development for Science",
+    [
+        "Built and deployed data visualization apps (Flask, D3.js, Bootstrap) for startups.",
+        "Passionate about clean code and user-friendly interfaces."
+    ],
+    "🌱 Collaborative & Adaptable",
+    [
+        "Thrived in diverse teams, from academia to startups.",
+        "Managed cross-functional teams and taught STEM to 100+ students (grades 7-13).",
+        "When not coding, I like painting or tutoring kids."
+    ],
+    "Let’s work together if you need:",
+    [
+        "A bioinformatics expert to analyze complex datasets.",
+        "A developer who understands biology.",
+        "A full-stack developer for web applications.",
+        "A problem-solver for data-heavy projects.",
+        "A quick learner for your tech stack."
+    ],
+    "Feel free to explore the sections on my portfolio to learn more about my projects, skills, and professional journey. I’m open to opportunities in bioinformatics, data science, and web development. Let’s connect!"
 ]
 const recommend1 = "Mariamawit showed great work ethic. She is diligent, responsive, organized, responsibile and takes initiatives. She adapted quickly to a new profession and a new enviornment, while demonstrating integrity. She was available to listen to others, she was able to maintain an effective relationship with her students and their parents. Her teamwork and effective communication were appreciated by her colleagues."
 const author1 = 'Jean-Pierre Pasquiou, Headmaster, LGM'

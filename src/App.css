@@ -269,9 +269,20 @@
   font-size: 20px;
   text-align: justify;
 }
-/* .aboutMe-text{
-  border-bottom: 1px solid white;
-} */
+.aboutMe-text{
+  padding: 0;
+  margin:0.5rem;
+  /* border-bottom: 1px solid white; */
+}
+#aboutMe-text-id1, #aboutMe-text-id2{
+  /* padding: .5rem; */
+  background-color: var(--color-bright-yellow);
+  color: black;
+  padding: 0.8rem;
+  font-weight: 300;
+
+
+}
 .aboutMe-goal{
   padding-top: 1rem;
   border-top: 1px solid black;
